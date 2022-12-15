@@ -9,10 +9,13 @@ using UnityEngine;
 [RequireComponent(typeof(AlchemyNode))]
 public class NodePlacer : MonoBehaviour
 {
-    [SerializeField] private AlchemyNode _parentNode;
-    [SerializeField] private GameObject _sprite;
+    [SerializeField] private AlchemyNode _testNode;
     [SerializeField] private GameObject _linkParent;
+    [SerializeField] private int _test_node_radius;
+    [SerializeField] private int _spacing;
     
+
+
     [Button("Place Nodes"), GUIColor(0, 1, 1)]
     public void PlaceNodes()
     {
@@ -24,12 +27,35 @@ public class NodePlacer : MonoBehaviour
         }
     }
 
+    [Button("Place Test Nodes"), GUIColor(0, 1, 1)]
+    public void PlaceTestNodes()
+    {
+        for (int x = -_test_node_radius; x <= _test_node_radius; x++)
+        {
+            for (int y = -_test_node_radius; y <= _test_node_radius; y++)
+            {
+                AlchemyNode node = Instantiate(_testNode, new Vector3(x*_spacing, y*_spacing, 0), Quaternion.identity);
+                node.transform.SetParent(transform);
+                node.X = x;
+                node.Y = y;
+            }
+        }
+    }
+    
+    private void SpawnTestNode(int x, int y)
+    {
+        AlchemyNode node = Instantiate(_testNode, new Vector3(x, y, 0), Quaternion.identity);
+        node.transform.SetParent(transform);
+        node.X = x;
+        node.Y = y;
+    }
+
     private List<AlchemyNode> FindAllNodes()
     {
         GameObject[] nodes = GameObject.FindGameObjectsWithTag("AlchemyNode");
 
         List<AlchemyNode> alchemyNodes = new List<AlchemyNode>();
-        
+
         foreach (GameObject node in nodes)
         {
             alchemyNodes.Add(node.GetComponent<AlchemyNode>());
