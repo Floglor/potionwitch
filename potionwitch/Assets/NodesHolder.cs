@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Alchemy;
+using Alchemy.Nodes;
 using UnityEngine;
 
 public class NodesHolder : MonoBehaviour
