@@ -1,14 +1,30 @@
 ﻿using System;
 using Alchemy;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CheatMenu : MonoBehaviour
 {
+    [SerializeField] private Cauldron _cauldron;
+    [SerializeField] private GameObject _buttonPrefab;
     [SerializeField] private Inventory _inventory;
     [SerializeField] private Ingredient _ingredient;
 
-    private void Start()
+    [Button("Add Ingredient")]
+    private void AddItem()
     {
         _inventory.AddItem(_ingredient);
     }
+    [SerializeField] private Effect _potionEffect;
+
+    [Button("Add Potion")]
+    private void AddPotion()
+    {
+        _inventory.AddItem(_cauldron.ToPotion(_potionEffect));  
+    }
+
+   //private void Start()
+   //{
+   //    GameObject button = Instantiate(_buttonPrefab, transform);
+   //}
 }

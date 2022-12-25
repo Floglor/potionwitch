@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Alchemy
 {
     [Serializable]
-    public class Potion 
+    public class Potion : IItem
     {
        private Sprite _sprite;
        private string _name;
@@ -19,6 +19,16 @@ namespace Alchemy
               _cost = cost;
               _quality = quality;
               _description = description;
+         }
+
+         public Sprite GetIcon()
+         {
+             return _sprite;
+         }
+
+         public string GetName()
+         {
+             return _name;
          }
     }
 }
