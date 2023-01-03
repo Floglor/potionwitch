@@ -1,4 +1,5 @@
 ﻿using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 
 namespace Alchemy.Nodes
@@ -6,11 +7,13 @@ namespace Alchemy.Nodes
     public class Selector : MonoBehaviour
     {
         public AlchemyNode currentNode;
-        private AlchemyNode _previousNode;
+
         public NodesHolder nodesHolder;
 
-        private IAlchemySelectorTester _tester;
+        [SerializeField] private TextMeshProUGUI _nodeDebugText;
 
+        private IAlchemySelectorTester _tester;
+        private AlchemyNode _previousNode;
         private int _positionX;
         private int _positionY;
 
@@ -54,7 +57,7 @@ namespace Alchemy.Nodes
         {
             if (ChangeColorWhenSelected)
             {
-                currentNode.ColorNode(Color.white);
+                currentNode.ColorNode(currentNode.initialColor);
             }
 
             _previousNode = currentNode;
@@ -74,6 +77,11 @@ namespace Alchemy.Nodes
                 currentNode.ColorNode(Color.yellow);
                 SelectNode(currentNode);
             }
+
+            if (currentNode.GetEffect() == null)
+                _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y}], Empty";
+            else
+                _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y},] {currentNode.GetEffect().name}";
         }
 
         public void ApplyMove(Move move)

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Alchemy.Nodes;
+using UI;
 using UnityEngine;
 
 namespace Alchemy
@@ -8,7 +9,17 @@ namespace Alchemy
     {
         public Selector UsedSelector;
         public List<Ingredient> UsedIngredients;
-
+        [SerializeField] private Inventory _inventory;
+        
+        public void Brew()
+        {
+            if (UsedSelector.currentNode.GetEffect() == null) 
+                return;
+            
+            _inventory.AddItem(ToPotion(UsedSelector.currentNode.GetEffect()));
+            UsedIngredients.Clear();
+            UsedSelector.ReturnCursor();
+        }
         public Potion ToPotion(Effect effect)
         {
             float quality = ReturnQuality();
@@ -29,6 +40,10 @@ namespace Alchemy
 
         public void ResetCauldron()
         {
+            foreach (Ingredient usedIngredient in UsedIngredients)
+            {
+                _inventory.AddItem(usedIngredient);
+            }
             UsedIngredients.Clear();
             UsedSelector.ReturnCursor();
         }
