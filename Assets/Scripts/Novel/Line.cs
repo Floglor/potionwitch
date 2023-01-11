@@ -23,11 +23,15 @@ namespace Novel
         
         [ShowIf("@this.IsInterrupted == true && this.InterruptType == DialogueInterruptType.Choice")]
         public List<Choice> InterruptionChoices;
+        
+        [ShowIf("@this.IsInterrupted == true && this.InterruptType == DialogueInterruptType.Dialogue")]
+        public Dialogue InterruptionDialogue;
     }
 
     public enum DialogueInterruptType
     {
         Choice,
         Potion,
+        Dialogue
     }
 }
