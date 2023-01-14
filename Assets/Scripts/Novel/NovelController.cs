@@ -12,6 +12,9 @@ namespace Novel
         
         [SerializeField] private GameObject _choiceList;
         [SerializeField] private GameObject _choicePrefab;
+
+        [SerializeField] private NovelHistory _novelHistory;
+        
         
         
         private bool _isPaused;
@@ -42,6 +45,13 @@ namespace Novel
             }
             
             _currentDialogueIndex++;
+            
+            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
+            {
+                EndDialogue();
+                return;
+            }
+            
             Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
             
             if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
@@ -51,6 +61,7 @@ namespace Novel
             }
             
             UpdateTextAndSprite();
+            //_novelHistory.AddLine(currentLine);
 
             
             if (currentLine.IsInterrupted)
@@ -65,10 +76,6 @@ namespace Novel
                     PauseInteractions();
                     OpenPotionRequest();
                 }
-            }
-            else if (_currentDialogueIndex >= _currentDialogue.Lines.Count-1)
-            {
-                EndDialogue();
             }
         }
 

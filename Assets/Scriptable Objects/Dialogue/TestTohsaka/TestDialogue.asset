@@ -19,36 +19,49 @@ MonoBehaviour:
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Baaaka!
     CharacterSprite: {fileID: 21300000, guid: 609cdf9cb5a3c5143b4691c1f87ad426, type: 3}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Those sprite names are pissing me off
     CharacterSprite: {fileID: 21300000, guid: 53c3f9a8bc62c6548aa9daa8a32532e5, type: 3}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: "\u51DB\u5236\u670D09d(\u4E2D)? "
     CharacterSprite: {fileID: 21300000, guid: e56bc52eb9377b546bfed1da12ee0d51, type: 3}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
-  - Text: "\u51DB\u5236\u670D10c(\u8FD1)??? \\\\n This is Chinese!"
+    InterruptionDialogue: {fileID: 0}
+  - Text: Damn those boxes...
     CharacterSprite: {fileID: 21300000, guid: 6db0bd1f7daca3c4dac9ae1afdc7fc6f, type: 3}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Anyway, I can't read it but I now that this is Chinese!
+    CharacterSprite: {fileID: 21300000, guid: 6db0bd1f7daca3c4dac9ae1afdc7fc6f, type: 3}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Sprites of me, Tohsaka, stolen by Chinese! Gross!
     CharacterSprite: {fileID: 21300000, guid: 561e061d7a3f36642bb4f2f2e5182aa0, type: 3}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Anyway, I wonder if Floggy finished text animation at this point, or is
       the text just slaps into existence hectically?
     CharacterSprite: {fileID: 21300000, guid: bfaba50d3dbcb2d46acbfa6d819a5243, type: 3}
@@ -56,6 +69,7 @@ MonoBehaviour:
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Did he?
     CharacterSprite: {fileID: 21300000, guid: bfaba50d3dbcb2d46acbfa6d819a5243, type: 3}
     IsInterrupted: 1
@@ -64,5 +78,6 @@ MonoBehaviour:
     InterruptionChoices:
     - Text: Yes.
       NextDialogue: {fileID: 11400000, guid: 8846c6e66f1a8be4f9e8e5f3e51f8bda, type: 2}
-    - Text: He is quite retarded and lazy...
+    - Text: He is quite lazy...
       NextDialogue: {fileID: 11400000, guid: a45d81341e087b845a33a33d8492dbdc, type: 2}
+    InterruptionDialogue: {fileID: 0}
