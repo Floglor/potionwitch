@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Alchemy;
+using Garden;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ namespace UI
         [SerializeField] private Cauldron _cauldron;
         [SerializeField] private GameObject _itemPrefab;
         [SerializeField] private Transform _contentTransform;
+
+        [HideInInspector] public GardenPlot SelectedGardenPlot;
 
         public List<InventoryItemUI> _inventoryItemsUI = new List<InventoryItemUI>();
 
@@ -30,6 +33,14 @@ namespace UI
             if (item is Ingredient ingredient)
             {
                 _cauldron.AddIngredient(ingredient);
+                RemoveItem(item);
+            }
+
+            if (item is GardenSeed gardenSeed)
+            {
+                Debug.Log("Gayble");
+                Debug.Log(SelectedGardenPlot.name);
+                gardenSeed.SeedPlanting(SelectedGardenPlot);
                 RemoveItem(item);
             }
         }

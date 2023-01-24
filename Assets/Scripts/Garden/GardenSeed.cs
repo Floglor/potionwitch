@@ -6,19 +6,31 @@ using Alchemy;
 
 namespace Garden
 {
-    public class GardenSeed : MonoBehaviour, IItem
+    [CreateAssetMenu(fileName = "Seed", menuName = "Alchemy/Seed")]
+    public class GardenSeed : ScriptableObject, IItem
     {
         //private int _quality;
         private Ingredient _futureIngredient;
 
+        [SerializeField] private float _growthTime;
+        [SerializeField] private float _growthSpeed;
+
+        public Sprite Icon;
+        public string Name;
+
+        public void SeedPlanting(GardenPlot gardenPlot)
+        {
+            gardenPlot.Plant(this);
+        }
+
         public Sprite GetIcon()
         {
-            throw new System.NotImplementedException();
+            return Icon;
         }
 
         public string GetName()
         {
-            throw new System.NotImplementedException();
+            return Name;
         }
     }
 }
