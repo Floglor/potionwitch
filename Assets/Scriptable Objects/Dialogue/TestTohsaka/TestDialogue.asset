@@ -14,49 +14,91 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Text: This is the test dialogue
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: a41a38bc1fd1cb9448d7a62dc505ad17, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 1
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Baaaka!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 609cdf9cb5a3c5143b4691c1f87ad426, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Those sprite names are pissing me off
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 53c3f9a8bc62c6548aa9daa8a32532e5, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: "\u51DB\u5236\u670D09d(\u4E2D)? "
+    TargetCharacter: {fileID: 0}
     CharacterSprite: {fileID: 21300000, guid: e56bc52eb9377b546bfed1da12ee0d51, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Damn those boxes...
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 6db0bd1f7daca3c4dac9ae1afdc7fc6f, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Anyway, I can't read it but I now that this is Chinese!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 6db0bd1f7daca3c4dac9ae1afdc7fc6f, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Sprites of me, Tohsaka, stolen by Chinese! Gross!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 561e061d7a3f36642bb4f2f2e5182aa0, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
@@ -64,14 +106,26 @@ MonoBehaviour:
     InterruptionDialogue: {fileID: 0}
   - Text: Anyway, I wonder if Floggy finished text animation at this point, or is
       the text just slaps into existence hectically?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: bfaba50d3dbcb2d46acbfa6d819a5243, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: Did he?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: bfaba50d3dbcb2d46acbfa6d819a5243, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 1
     InterruptType: 0
     interruptionPotion: {fileID: 0}

@@ -8,33 +8,47 @@ namespace Novel
     public class NovelController : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI novelText;
-        [SerializeField] private Image _characterSprite;
-        
+        [SerializeField] private TextMeshProUGUI novelName;
+
+        [SerializeField] private Image _characterSpriteCenter;
+        [SerializeField] private Image _characterSpriteLeft;
+        [SerializeField] private Image _characterSpriteRight;
+
         [SerializeField] private GameObject _choiceList;
         [SerializeField] private GameObject _choicePrefab;
 
         [SerializeField] private NovelHistory _novelHistory;
-        
-        
-        
+
+
         private bool _isPaused;
         private Dialogue _currentDialogue;
         private int _currentDialogueIndex;
-        
-        
+
+
         public void StartDialogue(Dialogue dialogue)
         {
             _isPaused = false;
             _currentDialogue = dialogue;
             _currentDialogueIndex = 0;
-            
+
             UpdateTextAndSprite();
         }
 
         private void UpdateTextAndSprite()
         {
-            SetNovelText(_currentDialogue.Lines[_currentDialogueIndex].Text);
-            SetCharacterSprite(_currentDialogue.Lines[_currentDialogueIndex].CharacterSprite);
+            Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
+
+            SetNovelText(currentLine.Text,
+                currentLine.TargetCharacter != null
+                    ? currentLine.TargetCharacter.Name
+                    : "Witch");
+
+            _novelHistory.SaveInHistory(currentLine.Text, currentLine.TargetCharacter != null
+                ? currentLine.TargetCharacter.Name
+                : "Witch");
+
+            SetCharacterSprite(_currentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
+                _currentDialogue.Lines[_currentDialogueIndex].Position);
         }
 
         public void AdvanceDialogue()
@@ -43,27 +57,37 @@ namespace Novel
             {
                 return;
             }
-            
-            _currentDialogueIndex++;
-            
-            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
-            {
-                EndDialogue();
-                return;
-            }
-            
-            Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
-            
-            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
-            {
-                EndDialogue();
-                return;
-            }
-            
-            UpdateTextAndSprite();
-            //_novelHistory.AddLine(currentLine);
 
-            
+            _currentDialogueIndex++;
+
+            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
+            {
+                EndDialogue();
+                return;
+            }
+
+
+            Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
+
+            if (currentLine.ChangeUsedSprite)
+            {
+                SetCharacterSprite(currentLine.RemoveCharacterSprite
+                        ? null
+                        : currentLine.CharacterSprite,
+                    currentLine.UsedSpritePosition);
+
+                SetCharacterSprite(currentLine.ChangeSpriteTo, currentLine.UsedSpritePosition);
+            }
+
+            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
+            {
+                EndDialogue();
+                return;
+            }
+
+            UpdateTextAndSprite();
+
+
             if (currentLine.IsInterrupted)
             {
                 if (currentLine.InterruptType == DialogueInterruptType.Choice)
@@ -96,16 +120,21 @@ namespace Novel
             {
                 GameObject choice = Instantiate(_choicePrefab, _choiceList.transform);
                 choice.GetComponent<TextMeshProUGUI>().text = currentLineInterruptionChoice.Text;
+
                 choice.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     StartDialogue(currentLineInterruptionChoice.NextDialogue);
                     ClearChoices();
                 });
             }
-            
+
             LayoutRebuilder.ForceRebuildLayoutImmediate(_choiceList.GetComponent<RectTransform>());
+            foreach (Transform child in _choiceList.transform)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(child.GetComponent<RectTransform>());
+            }
         }
-        
+
 
         private void ClearChoices()
         {
@@ -124,19 +153,40 @@ namespace Novel
 
         private void ClearText()
         {
-            SetNovelText("");
+            SetNovelText("", "");
         }
 
-        private void SetNovelText(string text)
+        private void SetNovelText(string text, string characterName)
         {
+            novelName.text = characterName;
             novelText.text = text;
         }
-        
-        private void SetCharacterSprite(Sprite sprite)
+
+        private void SetCharacterSprite(Sprite sprite, DialoguePosition position)
         {
-            _characterSprite.sprite = sprite;
+            switch (position)
+            {
+                case DialoguePosition.Center:
+                    SetSprite(sprite, _characterSpriteCenter);
+                    break;
+                case DialoguePosition.Left:
+                    SetSprite(sprite, _characterSpriteLeft);
+                    break;
+                case DialoguePosition.Right:
+                    SetSprite(sprite, _characterSpriteRight);
+                    break;
+            }
+        }
+
+        private void SetSprite(Sprite sprite, Image image)
+        {
+            if (sprite == null)
+                image.gameObject.SetActive(false);
+            else
+            {
+                image.gameObject.SetActive(true);
+                image.sprite = sprite;
+            }
         }
     }
-    
-
 }

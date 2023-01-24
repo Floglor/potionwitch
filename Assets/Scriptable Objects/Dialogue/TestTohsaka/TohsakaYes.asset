@@ -14,20 +14,145 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Text: How cool is that!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 36b0724cb78d72c4788f4a9c559d488d, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: End Dialogue
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: 53c3f9a8bc62c6548aa9daa8a32532e5, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
   - Text: Did I just say that?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: b73508ccde384f94ea87be037ec6e2cc, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
     IsInterrupted: 0
     InterruptType: 0
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: 'Anyway! You can see two more of me. '
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: b0d5ea96768604f45ac702ebc058821f, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: But there is only one Tohsaka!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: 35df01905e70d4045a111a2af7b1133b, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: "Es l\xE4\xDFt frei. Eilesalve!"
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: 35df01905e70d4045a111a2af7b1133b, type: 3}
+    Position: 0
+    ChangeUsedSprite: 1
+    UsedSpritePosition: 1
+    RemoveCharacterSprite: 1
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: "F\xFCnf, Drei, Vier. Riesig und brennent, das ist ein Ende!"
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: 35df01905e70d4045a111a2af7b1133b, type: 3}
+    Position: 0
+    ChangeUsedSprite: 1
+    UsedSpritePosition: 2
+    RemoveCharacterSprite: 1
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: No more copies.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: 0326a4f0e603a4447956b3bbbf8ba428, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: But what if I need one!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: 0326a4f0e603a4447956b3bbbf8ba428, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Behold my copy!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: cce62536dad585c4b9741d97c8e0871a, type: 3}
+    Position: 0
+    ChangeUsedSprite: 1
+    UsedSpritePosition: 1
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 21300000, guid: 9bb7978e041417741801a95523194e58, type: 3}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: That's awkward...
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: cce62536dad585c4b9741d97c8e0871a, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
