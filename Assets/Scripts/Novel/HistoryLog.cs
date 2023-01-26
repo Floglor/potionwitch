@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Novel
 {
@@ -12,6 +13,7 @@ namespace Novel
         {
             _text.text = text;
             _characterName.text = characterName;
+
         }
     }
 }

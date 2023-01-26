@@ -46,6 +46,7 @@ namespace Novel
             _novelHistory.SaveInHistory(currentLine.Text, currentLine.TargetCharacter != null
                 ? currentLine.TargetCharacter.Name
                 : "Witch");
+            
 
             SetCharacterSprite(_currentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
                 _currentDialogue.Lines[_currentDialogueIndex].Position);
@@ -128,11 +129,14 @@ namespace Novel
                 });
             }
 
-            LayoutRebuilder.ForceRebuildLayoutImmediate(_choiceList.GetComponent<RectTransform>());
-            foreach (Transform child in _choiceList.transform)
-            {
-                LayoutRebuilder.ForceRebuildLayoutImmediate(child.GetComponent<RectTransform>());
-            }
+          //  LayoutRebuilder.MarkLayoutForRebuild(_choiceList.GetComponent<RectTransform>());
+            
+           // foreach (Transform child in _choiceList.transform)
+           // {
+           //     LayoutRebuilder.MarkLayoutForRebuild(child.GetComponent<RectTransform>());
+           // }
+         //  LayoutRebuilder.MarkLayoutForRebuild(_novelHistory.GetComponent<RectTransform>());
+
         }
 
 

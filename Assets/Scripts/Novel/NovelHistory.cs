@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,19 +9,28 @@ namespace Novel
     {
         [SerializeField] private GameObject _historyParent;
         [SerializeField] private GameObject _historyPrefab;
+        [SerializeField] private GameObject _historyScrollView;
         
         private List<HistoryLog> _historyLog;
-        
-        
 
-        public void OpenLog()
+        private void Awake()
         {
-            _historyParent.SetActive(true);
+            _historyLog = new List<HistoryLog>();
+        }
+
+        public void ToggleHistory()
+        {
+            _historyScrollView.SetActive(!_historyScrollView.activeSelf);
+        }
+
+        private void OpenLog()
+        {
+            _historyScrollView.SetActive(true);
         }
         
-        public void CloseLog()
+        private void CloseLog()
         {
-            _historyParent.SetActive(false);
+            _historyScrollView.SetActive(false);
         }
 
         public void SaveInHistory(string text, string characterName)
@@ -30,8 +40,11 @@ namespace Novel
             
             HistoryLog log = Instantiate(_historyPrefab, _historyParent.transform).GetComponent<HistoryLog>();
             
+            _historyLog.Add(log);
+            
             log.SetText(text, characterName);
-            LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
+            
+            LayoutRebuilder.ForceRebuildLayoutImmediate(_historyParent.transform.GetComponentInParent<RectTransform>());
         }
     }
 }
