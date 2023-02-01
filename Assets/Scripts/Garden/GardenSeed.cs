@@ -10,7 +10,7 @@ namespace Garden
     public class GardenSeed : ScriptableObject, IItem
     {
         //private int _quality;
-        private Ingredient _futureIngredient;
+        [SerializeField] private Ingredient _futureIngredient;
 
         [SerializeField] private float _growthTime;
         [SerializeField] private float _growthSpeed;
@@ -21,6 +21,11 @@ namespace Garden
         public void SeedPlanting(GardenPlot gardenPlot)
         {
             gardenPlot.Plant(this);
+        }
+
+        public Ingredient GetIngredient()
+        {
+            return _futureIngredient;
         }
 
         public Sprite GetIcon()
