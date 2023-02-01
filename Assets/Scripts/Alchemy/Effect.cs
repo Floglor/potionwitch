@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Alchemy
 {
@@ -10,5 +12,18 @@ namespace Alchemy
         public Sprite PotionSprite;
         public int BaseCost;
         public float Difficulty;
+
+        [ShowInInspector] private int _effectId;
+
+        [Button("Generate ID")]
+        public void GenerateID()
+        {
+            _effectId = GetInstanceID();
+        }
+        
+        public int GetEffectId()
+        {
+            return _effectId;
+        }
     }
 }

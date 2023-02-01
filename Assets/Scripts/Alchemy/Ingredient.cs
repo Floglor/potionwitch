@@ -1,4 +1,4 @@
-﻿using UI;
+﻿using Inventory;
 using UnityEngine;
 
 //ScriptableObject menu

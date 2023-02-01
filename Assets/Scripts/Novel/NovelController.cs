@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using Alchemy;
+using Inventory;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +20,11 @@ namespace Novel
         [SerializeField] private GameObject _choicePrefab;
 
         [SerializeField] private NovelHistory _novelHistory;
+        [SerializeField] private InventorySlot _potionSlot;
+        [SerializeField] private Button _potionSlotButton;
+        
+        public event System.Action OnPauseInteractions;
+        public event System.Action OnResumeInteractions;
 
 
         private bool _isPaused;
@@ -46,7 +53,7 @@ namespace Novel
             _novelHistory.SaveInHistory(currentLine.Text, currentLine.TargetCharacter != null
                 ? currentLine.TargetCharacter.Name
                 : "Witch");
-            
+
 
             SetCharacterSprite(_currentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
                 _currentDialogue.Lines[_currentDialogueIndex].Position);
@@ -99,20 +106,63 @@ namespace Novel
                 else
                 {
                     PauseInteractions();
-                    OpenPotionRequest();
+                    OpenPotionRequest(currentLine.interruptionPotion);
                 }
             }
         }
 
-        private void OpenPotionRequest()
+        private void OpenPotionRequest(Effect effect)
         {
             Debug.Log("Open potion request");
+            _potionSlot.gameObject.SetActive(true);
+            
+            _potionSlotButton.onClick.AddListener(() =>
+            {
+                IItem item = _potionSlot.GetItem();
+                
+                if (!(item is Potion potion))
+                {
+                    Debug.Log("provided item is not a potion");
+                }
+                else 
+                if (potion.GetEffectId() != effect.GetEffectId())
+                {
+                    Debug.Log("provided potion is not the correct effect");
+                }
+                else
+                {
+                    UnpauseInteractions();
+                    AdvanceDialogue();
+                    ClosePotionRequest();
+                }
+            });
+            
+        }
+
+        private void ClosePotionRequest()
+        {
+            Debug.Log("Close potion request");
+            _potionSlot.gameObject.SetActive(false);
+            _potionSlotButton.onClick.RemoveAllListeners();
+        }
+        
+        private void HidePotionRequest()
+        {
+            Debug.Log("Hide potion request");
+            _potionSlot.gameObject.SetActive(false);
         }
 
         private void PauseInteractions()
         {
             _isPaused = true;
             Debug.Log("PauseInteractions");
+            
+        }
+        
+        private void UnpauseInteractions()
+        {
+            _isPaused = false;
+            Debug.Log("UnpauseInteractions");
         }
 
         private void ExecuteChoice(List<Choice> currentLineInterruptionChoices)
@@ -124,19 +174,11 @@ namespace Novel
 
                 choice.GetComponent<Button>().onClick.AddListener(() =>
                 {
+                    _novelHistory.SaveInHistory(choice.GetComponent<TextMeshProUGUI>().text, "Witch");
                     StartDialogue(currentLineInterruptionChoice.NextDialogue);
                     ClearChoices();
                 });
             }
-
-          //  LayoutRebuilder.MarkLayoutForRebuild(_choiceList.GetComponent<RectTransform>());
-            
-           // foreach (Transform child in _choiceList.transform)
-           // {
-           //     LayoutRebuilder.MarkLayoutForRebuild(child.GetComponent<RectTransform>());
-           // }
-         //  LayoutRebuilder.MarkLayoutForRebuild(_novelHistory.GetComponent<RectTransform>());
-
         }
 
 

@@ -1,6 +1,5 @@
 ﻿using Alchemy;
 using Sirenix.OdinInspector;
-using UI;
 using UnityEngine;
 
 namespace DevTools
@@ -8,7 +7,7 @@ namespace DevTools
     public class CheatMenu : MonoBehaviour
     {
         [SerializeField] private Cauldron _cauldron;
-        [SerializeField] private Inventory _inventory;
+        [SerializeField] private Inventory.Inventory _inventory;
         [SerializeField] private Ingredient _ingredient;
 
         [Button("Add Ingredient")]

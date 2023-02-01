@@ -1,25 +1,40 @@
 ﻿using System.Collections.Generic;
 using Alchemy;
+using Misc;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace UI
+namespace Inventory
 {
-    public class Inventory : MonoBehaviour
+    public class Inventory : MonoBehaviour, IDropHandler
     {
         public List<IItem> items = new List<IItem>();
         [SerializeField] private Cauldron _cauldron;
         [SerializeField] private GameObject _itemPrefab;
         [SerializeField] private Transform _contentTransform;
 
-        public List<InventoryItemUI> _inventoryItemsUI = new List<InventoryItemUI>();
+        public List<InventoryItem> _inventoryItemsUI = new List<InventoryItem>();
+
+        [HideInInspector] public InventorySlot _requestedSlot;
+
+        public void RequestItemInSlot(InventorySlot slot)
+        {
+            _requestedSlot = slot;
+        }
+
 
         public void AddItem(IItem item)
         {
             items.Add(item);
             GameObject itemObject = Instantiate(_itemPrefab, _contentTransform);
-            _inventoryItemsUI.Add(itemObject.GetComponent<InventoryItemUI>());
-            itemObject.GetComponent<InventoryItemUI>().SetItem(item);
+            _inventoryItemsUI.Add(itemObject.GetComponent<InventoryItem>());
+
+            InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
+            inventoryItem.SetItem(item);
+
+            inventoryItem.RemoveItemEvent += RemoveItem;
+
             Button itemButton = itemObject.GetComponent<Button>();
 
             itemButton.onClick.AddListener(() => ItemOnClick(item));
@@ -27,10 +42,13 @@ namespace UI
 
         public void ItemOnClick(IItem item)
         {
-            if (item is Ingredient ingredient)
+            if (StateController.Instance.areIngredientsSelectable)
             {
-                _cauldron.AddIngredient(ingredient);
-                RemoveItem(item);
+                if (item is Ingredient ingredient)
+                {
+                    _cauldron.AddIngredient(ingredient);
+                    DestroyItem(item);
+                }
             }
         }
 
@@ -64,12 +82,43 @@ namespace UI
             {
                 if (item.Equals(_inventoryItemsUI[i].TargetItem))
                 {
+                    _inventoryItemsUI.Remove(_inventoryItemsUI[i]);
+                    break;
+                }
+            }
+
+            items.Remove(item);
+        }
+
+        public void DestroyItem(IItem item)
+        {
+            for (int i = 0; i < _inventoryItemsUI.Count; i++)
+            {
+                if (item.Equals(_inventoryItemsUI[i].TargetItem))
+                {
                     Destroy(_inventoryItemsUI[i].gameObject);
                     _inventoryItemsUI.Remove(_inventoryItemsUI[i]);
                     break;
                 }
             }
-            items.Remove(item);
+        }
+
+        public void OnDrop(PointerEventData eventData)
+        {
+            
+            GameObject droppedItem = eventData.pointerDrag;
+
+            if (droppedItem == null)
+            {
+                return;
+            }
+            
+            if (droppedItem.GetComponent<InventoryItem>().TargetItem is IItem item)
+            {
+                AddItem(item);
+            }
+            
+            Destroy(droppedItem);
         }
     }
 }

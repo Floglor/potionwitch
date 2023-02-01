@@ -156,3 +156,83 @@ MonoBehaviour:
     interruptionPotion: {fileID: 0}
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
+  - Text: Anyway, I need a TestPotion for research puproses.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: cce62536dad585c4b9741d97c8e0871a, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: I don't know who exactly named it TestPotion, that is quite dumb, if you
+      ask me.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: cce62536dad585c4b9741d97c8e0871a, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Anyway, give it to me.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: cce62536dad585c4b9741d97c8e0871a, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 1
+    InterruptType: 1
+    interruptionPotion: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb,
+      type: 2}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Great! Thanks a lot. Now I can make a NullReferenceException!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: d89cd92dcd8ca9b47ad00711f340cd0c, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Hey, wh%t? What's h@ppeni&g?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: d89cd92dcd8ca9b47ad00711f340cd0c, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: "%E\u2116dDial*gue%"
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 21300000, guid: d89cd92dcd8ca9b47ad00711f340cd0c, type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}

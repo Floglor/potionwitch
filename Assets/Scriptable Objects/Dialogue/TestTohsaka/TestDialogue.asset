@@ -53,7 +53,7 @@ MonoBehaviour:
     InterruptionChoices: []
     InterruptionDialogue: {fileID: 0}
   - Text: "\u51DB\u5236\u670D09d(\u4E2D)? "
-    TargetCharacter: {fileID: 0}
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
     CharacterSprite: {fileID: 21300000, guid: e56bc52eb9377b546bfed1da12ee0d51, type: 3}
     Position: 0
     ChangeUsedSprite: 0

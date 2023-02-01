@@ -10,6 +10,7 @@ namespace Novel
         [SerializeField] private NovelController _novelController;
         
         
+        
         private void Start()
         {
             foreach (var button in _buttons)
