@@ -1,28 +1,30 @@
 ﻿using UnityEngine;
-using System.Collections;
- 
-[RequireComponent(typeof(BoxCollider2D))]
-public class CameraBounds : MonoBehaviour
+
+namespace CameraControls
 {
-    public Camera linkedCamera;
-    private BoxCollider2D boxCollider;
- 
-    private void Start()
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class CameraBounds : MonoBehaviour
     {
-        boxCollider = this.GetComponent<BoxCollider2D>();
-    }
+        public Camera linkedCamera;
+        private BoxCollider2D boxCollider;
  
-    private void LateUpdate()
-    {
-        float vertExtent = linkedCamera.orthographicSize;
-        float horizExtent = vertExtent * Screen.width / Screen.height;
+        private void Start()
+        {
+            boxCollider = this.GetComponent<BoxCollider2D>();
+        }
  
-        Vector3 linkedCameraPos = linkedCamera.transform.position;
-        Bounds areaBounds = boxCollider.bounds;
+        private void LateUpdate()
+        {
+            float vertExtent = linkedCamera.orthographicSize;
+            float horizExtent = vertExtent * Screen.width / Screen.height;
  
-        linkedCamera.transform.position = new Vector3(
-            Mathf.Clamp(linkedCameraPos.x, areaBounds.min.x + horizExtent, areaBounds.max.x - horizExtent),
-            Mathf.Clamp(linkedCameraPos.y, areaBounds.min.y + vertExtent, areaBounds.max.y - vertExtent),
-            linkedCameraPos.z);
+            Vector3 linkedCameraPos = linkedCamera.transform.position;
+            Bounds areaBounds = boxCollider.bounds;
+ 
+            linkedCamera.transform.position = new Vector3(
+                Mathf.Clamp(linkedCameraPos.x, areaBounds.min.x + horizExtent, areaBounds.max.x - horizExtent),
+                Mathf.Clamp(linkedCameraPos.y, areaBounds.min.y + vertExtent, areaBounds.max.y - vertExtent),
+                linkedCameraPos.z);
+        }
     }
 }
