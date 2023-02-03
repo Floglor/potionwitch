@@ -50,6 +50,33 @@ namespace Inventory
                     DestroyItem(item);
                 }
             }
+
+            if (item is GardenSeed gardenSeed)
+            {
+                Debug.Log("Succesfully planted Seed on Garden Plot:");
+                Debug.Log(SelectedGardenPlot.name);
+                gardenSeed.SeedPlanting(SelectedGardenPlot);
+                RemoveItem(item);
+            }
+        }
+
+        public void SelectGardenPlot(GardenPlot gardenPlot)
+        {
+            if (SelectedGardenPlot != null)
+            {
+                SelectedGardenPlot.Deselect();
+            }
+            gardenPlot.Select();
+            SelectedGardenPlot = gardenPlot;
+        }
+        
+        public void DeselectGardenPlot(GardenPlot gardenPlot)
+        {
+            if (SelectedGardenPlot != null)
+            {
+                SelectedGardenPlot.Deselect();
+            }
+            SelectedGardenPlot = null;
         }
 
         public void HideItem(IItem item)
