@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Alchemy;
+using Garden;
 using Misc;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,6 +18,8 @@ namespace Inventory
         public List<InventoryItem> _inventoryItemsUI = new List<InventoryItem>();
 
         [HideInInspector] public InventorySlot _requestedSlot;
+        
+        public GardenPlot SelectedGardenPlot;
 
         public void RequestItemInSlot(InventorySlot slot)
         {

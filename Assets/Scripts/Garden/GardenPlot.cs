@@ -1,5 +1,5 @@
-using System.Collections;
-using UI;
+using Inventory;
+using Misc;
 using UnityEngine;
 using UnityEngine.EventSystems;
 

@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using UI;
 using UnityEngine;
 
-public class GlobalAccess : MonoBehaviour
+namespace Misc
 {
-    public static GlobalAccess Instance;
-    public Inventory Inventory;
-
-    private void Awake()
+    public class GlobalAccess : MonoBehaviour
     {
-        Instance = this;
+        public static GlobalAccess Instance;
+        public Inventory.Inventory Inventory;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
     }
 }
