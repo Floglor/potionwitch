@@ -65,9 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -99,10 +102,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -456,9 +463,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_5": -291894095118293416
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_12": 3832340000088532889
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_9": -3331868340893793718
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_6": 4224271884669651651
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_3": 3311540011030624131
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_1": 373573475074387249
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_11": 5801184204006751
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_13": -8528541718570800163
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_14": -5774751912594757363
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_10": 4465556666720371842
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_4": -5497091490054806730
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_7": -7215003491757170432
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_8": 8545568746483760750
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_0": 278703585262289181
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_2": 8636565539528899236
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
