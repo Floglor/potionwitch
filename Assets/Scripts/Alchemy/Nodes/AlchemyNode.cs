@@ -11,6 +11,12 @@ namespace Alchemy.Nodes
       [SerializeField] private Effect _effect;
 
       public Effect GetEffect() => _effect;
+      
+      public void SetSprite(Sprite sprite)
+      {
+          GetComponent<SpriteRenderer>().sprite = sprite;
+      }
+      
       public void ColorNode(Color colour)
       {
           GetComponent<SpriteRenderer>().color = colour;
@@ -20,5 +26,6 @@ namespace Alchemy.Nodes
       {
           ColorNode(initialColor);
       }
+      
    }
 }

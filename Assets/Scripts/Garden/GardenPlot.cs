@@ -22,6 +22,8 @@ namespace Garden
 
         public void OnPointerDown(PointerEventData eventData)
         {
+
+            Debug.Log("Clicked on Garden Plot!");
             if (_notBought)
             {
                 Debug.Log("Not bought yet!");
