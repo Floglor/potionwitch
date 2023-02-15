@@ -16,7 +16,10 @@ namespace Garden
         public Sprite Icon;
         public string Name;
 
-        public void SeedPlanting(GardenPlot gardenPlot)
+        public Sprite GrowingSprite;
+        public Sprite RipeSprite;
+
+        public void PlantSeed(GardenPlot gardenPlot)
         {
             gardenPlot.Plant(this);
         }
