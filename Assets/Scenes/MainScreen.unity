@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b413c916464cfdb451270a5c562c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cauldron: {fileID: 0}
+  _cauldron: {fileID: 661249856}
   _inventory: {fileID: 497182963}
   _ingredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
   _seed: {fileID: 0}
