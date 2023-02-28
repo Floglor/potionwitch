@@ -7,29 +7,35 @@ namespace Garden
 {
     public class GardenPlot : MonoBehaviour, IPointerDownHandler
     {
-        private Sprite _sprite;
-        public bool _notBought; 
+        public bool NotBought; 
         
         private GardenSeed _seed;
         IItem _futureIngredient;
 
 
-        public bool _isPlanted;
+        public bool IsPlanted;
         public bool IsSelected;
         private bool _ingredientReady;
         private float _growthTime=0;
-        
 
+        public SpriteRenderer SpriteRenderer;
+
+        public Sprite OriginalSprite;
+        public Sprite PlantedSprite;
+
+        private void Awake()
+        {
+            SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        }
         public void OnPointerDown(PointerEventData eventData)
         {
-
-            if (_notBought)
+            if (NotBought)
             {
                 Debug.Log("Not bought yet!");
                 return;
             }
 
-            if (!_isPlanted && !IsSelected)
+            if (!IsPlanted && !IsSelected)
             {
                 Debug.Log("Succesfully clicked on Garden Plot! Activate Inventory!");
                 GlobalAccess.Instance.Inventory.gameObject.SetActive(true);
@@ -43,8 +49,11 @@ namespace Garden
                 Debug.Log("Got ingredient!");
                 _futureIngredient = _seed.GetIngredient();
                 GlobalAccess.Instance.Inventory.AddItem(_futureIngredient);
+
                 _ingredientReady = false;
-                _isPlanted = false;
+                IsPlanted = false;
+
+                ChangeGardenSprite(OriginalSprite);
             }
 
             if (IsSelected)
@@ -56,13 +65,20 @@ namespace Garden
 
         public void Plant(GardenSeed seed)
         {
+            if (IsPlanted)
+            {
+                return;
+            }
+
             _seed = seed;
-            _isPlanted = true;
+            IsPlanted = true;
+            GlobalAccess.Instance.Inventory.DeselectGardenPlot(this);
+            ChangeGardenSprite(PlantedSprite);
         }
 
         void Update()
         {
-            if (!_isPlanted)
+            if (!IsPlanted)
             {
                 return;
             }
@@ -73,7 +89,10 @@ namespace Garden
             }
             else
             {
+                //growthTime not mentioned and never set to zero
+
                 _ingredientReady = true;
+                ChangeGardenSprite(_seed.RipeSprite);
             }
         }
 
@@ -88,6 +107,10 @@ namespace Garden
             GetComponent<SpriteRenderer>().color = Color.white;
             IsSelected=false;
         }
-    }
-       
+
+        private void ChangeGardenSprite(Sprite TargetSprite)
+        {
+            SpriteRenderer.sprite = TargetSprite;
+        }
+    }      
 }

@@ -15,5 +15,7 @@ MonoBehaviour:
   _futureIngredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
   _growthTime: 0
   _growthSpeed: 0
-  Icon: {fileID: 21300000, guid: 6157b28c21b41044684d7ddfadff2ca9, type: 3}
+  Icon: {fileID: 1831078158, guid: f8277c11589d8154d8f95115147650ac, type: 3}
   Name: 
+  GrowingSprite: {fileID: -1244576950, guid: f8277c11589d8154d8f95115147650ac, type: 3}
+  RipeSprite: {fileID: 364208323, guid: f8277c11589d8154d8f95115147650ac, type: 3}

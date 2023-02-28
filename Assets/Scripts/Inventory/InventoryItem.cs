@@ -47,14 +47,14 @@ namespace Inventory
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            RemoveItemEvent?.Invoke(TargetItem);
-            transform.parent = _canvas.transform;
+            //RemoveItemEvent?.Invoke(TargetItem);
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
             Debug.Log("OnBeginDrag");
             _canvasGroup.blocksRaycasts = false;
+            transform.SetParent(_canvas.transform);
         }
 
         public void OnEndDrag(PointerEventData eventData)

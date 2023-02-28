@@ -621,6 +621,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2075676876173770334, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: spriteArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
         type: 3}
       propertyPath: m_Name
@@ -793,6 +798,12 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2075676876173770334, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: SpriteArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1496933875, guid: f8277c11589d8154d8f95115147650ac,
+        type: 3}
     - target: {fileID: 6303356318853284962, guid: decd4ac27f6cd124c8fa8f62257f801c,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1104,6 +1115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436945599}
   - component: {fileID: 1436945598}
+  - component: {fileID: 1436945600}
   m_Layer: 0
   m_Name: CheatMenu
   m_TagString: Untagged
@@ -1143,6 +1155,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436945600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436945597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33e64a8855054549a917b5cac1db2aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areIngredientsSelectable: 1
+  arePotionsSelectable: 0
 --- !u!224 &1473222616 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8606114062876428370, guid: d51d6ab682246d944881fa4a09ddc1b9,
@@ -1433,7 +1459,7 @@ GameObject:
   - component: {fileID: 1956051914}
   - component: {fileID: 1956051913}
   m_Layer: 5
-  m_Name: Inventory
+  m_Name: InventoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -47,19 +47,24 @@ namespace Inventory
         {
             if (StateController.Instance.areIngredientsSelectable)
             {
-                if (item is Ingredient ingredient)
+                if (item is Ingredient ingredient && _cauldron is not null) 
                 {
                     _cauldron.AddIngredient(ingredient);
-                    DestroyItem(item);
+                    DestroyItem(item); 
                 }
             }
 
-            if (item is GardenSeed gardenSeed)
+            if (item is GardenSeed gardenSeed && SelectedGardenPlot is not null)
             {
+                if (SelectedGardenPlot.IsPlanted == true)
+                {
+                    return;
+                }
+
                 Debug.Log("Succesfully planted Seed on Garden Plot:");
                 Debug.Log(SelectedGardenPlot.name);
-                gardenSeed.SeedPlanting(SelectedGardenPlot);
-                RemoveItem(item);
+                gardenSeed.PlantSeed(SelectedGardenPlot);
+                DestroyItem(item);
             }
         }
 
