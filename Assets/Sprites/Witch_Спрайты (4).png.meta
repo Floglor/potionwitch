@@ -62,9 +62,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -96,10 +99,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -432,9 +439,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_8": 1126047944985094975
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_10": -738998197428830907
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_14": -4567665405920468150
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_1": 4691243796742233733
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_9": -3252555907619166221
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_2": 4957754216850451042
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_3": -7209833793760370077
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_4": -1977134637938348646
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_7": 1356456477055466913
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_12": -5934241697357530876
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_11": -5208710018094415661
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_5": 8984169629847000701
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_6": 2178705487262769025
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (4)_0": -8094204543685829607
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
