@@ -16,6 +16,7 @@ namespace Inventory
 
         private Canvas _canvas;
         private CanvasGroup _canvasGroup;
+        private Transform _originalParentTransform;
 
         private void Start()
         {
@@ -52,6 +53,7 @@ namespace Inventory
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            _originalParentTransform = transform.parent;
             Debug.Log("OnBeginDrag");
             _canvasGroup.blocksRaycasts = false;
             transform.SetParent(_canvas.transform);
@@ -61,20 +63,19 @@ namespace Inventory
         {
             Debug.Log("OnEndDrag");
             _canvasGroup.blocksRaycasts = true;
+            transform.SetParent(_originalParentTransform);
         }
 
         public void OnDrag(PointerEventData eventData)
         {
             FollowMouse();
         }
-        
+
         private void FollowMouse()
         {
-            Debug.Log("MousePos:" + Input.mousePosition);
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = 10;
             transform.position = Input.mousePosition * _canvas.scaleFactor;
-            Debug.Log("ItemPos:" + transform.position);
         }
     }
 }

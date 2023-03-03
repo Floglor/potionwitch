@@ -18,7 +18,7 @@ namespace DevTools
         private void AddItem()
         {
             if (_ingredient is null) return;
-            _inventory.AddItem(_ingredient);
+            _inventory.SpawnItem(_ingredient);
         }
 
 
@@ -26,14 +26,14 @@ namespace DevTools
         private void AddPotion()
         {
             if (_potionEffect is null) return;
-            _inventory.AddItem(_cauldron.ToPotion(_potionEffect));
+            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect));
         }
 
         [Button("Add Seed")]
         private void AddSeed()
         {
             if (_seed is null) return;
-            _inventory.AddItem(_seed);
+            _inventory.SpawnItem(_seed);
         }
 
         private void Start()

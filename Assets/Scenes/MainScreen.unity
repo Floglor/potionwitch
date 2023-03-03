@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 661249856}
+      - m_Target: {fileID: 1300037921}
         m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: Brew
         m_Mode: 1
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b413c916464cfdb451270a5c562c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cauldron: {fileID: 661249856}
+  _cauldron: {fileID: 1300037921}
   _inventory: {fileID: 497182963}
   _ingredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
   _seed: {fileID: 11400000, guid: 3022dfbbe56d8a849825120f7a4b48a1, type: 2}
@@ -3752,53 +3752,6 @@ MonoBehaviour:
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
   potionEffect: {fileID: 0}
---- !u!1 &661249853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 661249855}
-  - component: {fileID: 661249856}
-  m_Layer: 0
-  m_Name: Cauldron
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &661249855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661249853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -4.65, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &661249856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661249853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c61e537f31415caf85648cd24c7d02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UsedSelector: {fileID: 969818849}
-  UsedIngredients: []
-  _inventory: {fileID: 497182963}
 --- !u!1 &673739357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,7 +5264,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &946674575
 MonoBehaviour:
@@ -6743,7 +6696,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094107806
 GameObject:
@@ -8126,8 +8079,9 @@ GameObject:
   - component: {fileID: 1300037918}
   - component: {fileID: 1300037920}
   - component: {fileID: 1300037919}
+  - component: {fileID: 1300037921}
   m_Layer: 5
-  m_Name: CauldronSprite
+  m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8192,6 +8146,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300037917}
   m_CullTransparentMesh: 0
+--- !u!114 &1300037921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300037917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c61e537f31415caf85648cd24c7d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsedSelector: {fileID: 969818849}
+  UsedIngredients: []
+  _inventory: {fileID: 497182963}
 --- !u!1 &1307583684
 GameObject:
   m_ObjectHideFlags: 0
@@ -10279,7 +10248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 661249856}
+      - m_Target: {fileID: 1300037921}
         m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: ResetCauldron
         m_Mode: 1
@@ -10742,7 +10711,7 @@ Transform:
   - {fileID: 345351251}
   - {fileID: 1795992242}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696088906
 GameObject:
@@ -13189,7 +13158,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _cauldron
       value: 
-      objectReference: {fileID: 661249856}
+      objectReference: {fileID: 1300037921}
     - target: {fileID: 8606114062876428370, guid: d51d6ab682246d944881fa4a09ddc1b9,
         type: 3}
       propertyPath: m_Pivot.x

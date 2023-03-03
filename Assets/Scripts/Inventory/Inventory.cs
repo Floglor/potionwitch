@@ -27,22 +27,6 @@ namespace Inventory
         }
 
 
-        public void AddItem(IItem item)
-        {
-            items.Add(item);
-            GameObject itemObject = Instantiate(_itemPrefab, _contentTransform);
-            _inventoryItemsUI.Add(itemObject.GetComponent<InventoryItem>());
-
-            InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
-            inventoryItem.SetItem(item);
-
-            inventoryItem.RemoveItemEvent += RemoveItem;
-
-            Button itemButton = itemObject.GetComponent<Button>();
-
-            itemButton.onClick.AddListener(() => ItemOnClick(item));
-        }
-
         public void ItemOnClick(IItem item)
         {
             if (StateController.Instance.areIngredientsSelectable)
@@ -66,6 +50,28 @@ namespace Inventory
                 gardenSeed.PlantSeed(SelectedGardenPlot);
                 DestroyItem(item);
             }
+        }
+
+        public void SpawnItem(IItem item)
+        {
+            items.Add(item);
+            
+            GameObject itemObject = Instantiate(_itemPrefab, _contentTransform);
+            _inventoryItemsUI.Add(itemObject.GetComponent<InventoryItem>());
+
+            InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
+            inventoryItem.SetItem(item);
+
+            inventoryItem.RemoveItemEvent += RemoveItem;
+
+            Button itemButton = itemObject.GetComponent<Button>();
+
+            itemButton.onClick.AddListener(() => ItemOnClick(item));
+        }
+        
+        public void AddItem(InventoryItem itemObject)
+        {
+            itemObject.transform.SetParent(_contentTransform);
         }
 
         public void SelectGardenPlot(GardenPlot gardenPlot)
@@ -142,6 +148,7 @@ namespace Inventory
 
         public void OnDrop(PointerEventData eventData)
         {
+            Debug.Log("OnDrop");
             
             GameObject droppedItem = eventData.pointerDrag;
 
@@ -149,13 +156,14 @@ namespace Inventory
             {
                 return;
             }
-            
-            if (droppedItem.GetComponent<InventoryItem>().TargetItem is IItem item)
+
+            if (droppedItem.GetComponent<InventoryItem>() != null) 
             {
-                AddItem(item);
+                AddItem(droppedItem.GetComponent<InventoryItem>());
             }
             
-            Destroy(droppedItem);
         }
+
+        
     }
 }

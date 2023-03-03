@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using Alchemy.Nodes;
+using Inventory;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Alchemy
 {
-    public class Cauldron : MonoBehaviour
+    public class Cauldron : MonoBehaviour, IDropHandler
     {
         public Selector UsedSelector;
         public List<Ingredient> UsedIngredients;
@@ -15,7 +17,7 @@ namespace Alchemy
             if (UsedSelector.currentNode.GetEffect() == null) 
                 return;
             
-            _inventory.AddItem(ToPotion(UsedSelector.currentNode.GetEffect()));
+            _inventory.SpawnItem(ToPotion(UsedSelector.currentNode.GetEffect()));
             UsedIngredients.Clear();
             UsedSelector?.ReturnCursor();
         }
@@ -41,10 +43,22 @@ namespace Alchemy
         {
             foreach (Ingredient usedIngredient in UsedIngredients)
             {
-                _inventory.AddItem(usedIngredient);
+                _inventory.SpawnItem(usedIngredient);
             }
             UsedIngredients.Clear();
             UsedSelector.ReturnCursor();
+        }
+
+        public void OnDrop(PointerEventData eventData)
+        {
+            Debug.Log("Cauldron OnDrop");
+            
+            if (eventData.pointerDrag.GetComponent<InventoryItem>().TargetItem is Ingredient ingredient)
+            {
+                Debug.Log("it is an ingredient");
+                AddIngredient(ingredient);
+                _inventory.DestroyItem(ingredient);
+            }
         }
     }
 }
