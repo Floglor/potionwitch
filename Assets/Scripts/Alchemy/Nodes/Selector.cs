@@ -49,9 +49,22 @@ namespace Alchemy.Nodes
         private void Start()
         {
             currentNode = nodesHolder.GetNode(_positionX, _positionY);
+            //Eto konesh kostil))
+            ResetStartNode();
             currentNode.ColorNode(Color.yellow);
         }
 
+        private void ResetStartNode()
+        {
+            _previousNode = currentNode;
+        }
+        private void ResetAllNodeColors()
+        {
+            foreach (AlchemyNode nodesHolderNode in nodesHolder.Nodes)
+            {
+                nodesHolderNode.ColorNode(nodesHolderNode.initialColor);
+            }
+        }
 
         private void ReselectNode()
         {
@@ -59,6 +72,9 @@ namespace Alchemy.Nodes
             {
                 currentNode.ColorNode(currentNode.initialColor);
             }
+
+            if (_previousNode != null)
+                _previousNode.ColorNode(Color.blue);
 
             _previousNode = currentNode;
             currentNode = nodesHolder.GetNode(_positionX, _positionY);
@@ -77,10 +93,9 @@ namespace Alchemy.Nodes
                 currentNode.ColorNode(Color.yellow);
                 SelectNode(currentNode);
             }
-
-
-            if (_nodeDebugText == null) return;
             
+            if (_nodeDebugText == null) return;
+
             if (currentNode.GetEffect() == null)
                 _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y}], Empty";
             else
@@ -97,7 +112,7 @@ namespace Alchemy.Nodes
         {
             foreach (Move move in moveSet.Moves)
             {
-                MoveCursor(move);
+                ApplyMove(move);
             }
 
             ReselectNode();
@@ -106,6 +121,8 @@ namespace Alchemy.Nodes
         public void ReturnCursor()
         {
             MoveCursor(0, 0);
+            ResetAllNodeColors();
+            ResetStartNode();
             ReselectNode();
         }
 

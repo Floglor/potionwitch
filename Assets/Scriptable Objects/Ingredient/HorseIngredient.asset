@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8b39a797f230b540bd4b822e37f87df, type: 3}
-  m_Name: LeftIngradient
+  m_Name: HorseIngredient
   m_EditorClassIdentifier: 
   MoveSet:
     moves:
-    - X: -1
+    - X: 1
       Y: 0
-  Icon: {fileID: -5497091490054806730, guid: 2191ab4b836919446bea8990389d53c1, type: 3}
-  Name: Left
+    - X: 1
+      Y: 0
+    - X: 0
+      Y: 1
+  Icon: {fileID: 4224271884669651651, guid: 2191ab4b836919446bea8990389d53c1, type: 3}
+  Name: Horse
