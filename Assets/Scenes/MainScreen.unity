@@ -346,7 +346,7 @@ MonoBehaviour:
   X: -2
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &62659207
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
   X: 1
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &77700620
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   X: 4
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!212 &77700622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
   X: 3
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &158470993
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +982,7 @@ MonoBehaviour:
   X: 4
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &171785569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   X: 2
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &194385849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   X: -4
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &239268245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   X: 2
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &248825325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   X: 4
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &266706183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   X: -4
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &277731840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,8 +1778,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 661249856}
+        m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: Brew
         m_Mode: 1
         m_Arguments:
@@ -2146,7 +2146,7 @@ MonoBehaviour:
   X: 0
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1001 &404356668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2329,7 +2329,7 @@ MonoBehaviour:
   X: 3
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &411368290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,7 +2430,7 @@ MonoBehaviour:
   X: -2
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &419204195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,7 +2569,7 @@ MonoBehaviour:
   X: 3
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &446617431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2670,7 @@ MonoBehaviour:
   X: 3
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &451798779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2771,7 @@ MonoBehaviour:
   X: 3
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &459774024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,7 +2872,7 @@ MonoBehaviour:
   X: 2
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &489611155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   X: -3
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &494571840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,8 +3006,8 @@ MonoBehaviour:
   _cauldron: {fileID: 661249856}
   _inventory: {fileID: 497182963}
   _ingredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
-  _seed: {fileID: 0}
-  _potionEffect: {fileID: 0}
+  _seed: {fileID: 11400000, guid: 3022dfbbe56d8a849825120f7a4b48a1, type: 2}
+  _potionEffect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
 --- !u!4 &494571842
 Transform:
   m_ObjectHideFlags: 0
@@ -3141,7 +3141,7 @@ MonoBehaviour:
   X: 1
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   X: -3
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &601428533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,7 +3549,7 @@ MonoBehaviour:
   X: -1
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &659245207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,7 +3650,7 @@ MonoBehaviour:
   X: -1
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &660193796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   X: 3
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &661249853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,7 +3899,7 @@ MonoBehaviour:
   X: 1
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &690298541
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4364,7 @@ MonoBehaviour:
   X: 3
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &777292409
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,7 +4465,7 @@ MonoBehaviour:
   X: 0
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &803066351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,7 +4566,7 @@ MonoBehaviour:
   X: 4
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &808113522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,7 +4667,7 @@ MonoBehaviour:
   X: 1
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &808954895
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,7 +4768,7 @@ MonoBehaviour:
   X: 2
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &812741659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4869,7 +4869,7 @@ MonoBehaviour:
   X: -3
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &822426590
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,7 +4970,7 @@ MonoBehaviour:
   X: 0
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &830835788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5071,7 +5071,7 @@ MonoBehaviour:
   X: 1
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &845803933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,7 +5280,53 @@ MonoBehaviour:
   X: -4
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
+--- !u!1 &946674573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946674574}
+  - component: {fileID: 946674575}
+  m_Layer: 0
+  m_Name: StateController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946674574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946674573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 770.1934, y: 433.21533, z: -8.811877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946674575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946674573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33e64a8855054549a917b5cac1db2aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areIngredientsSelectable: 1
+  arePotionsSelectable: 0
 --- !u!1 &961682934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5581,7 +5627,7 @@ MonoBehaviour:
   X: 2
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &987288920
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,7 +5728,7 @@ MonoBehaviour:
   X: 4
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &987422514
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,7 +5967,7 @@ MonoBehaviour:
   X: -4
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &998903917
 GameObject:
   m_ObjectHideFlags: 0
@@ -6022,7 +6068,7 @@ MonoBehaviour:
   X: -1
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1000192467
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6169,7 @@ MonoBehaviour:
   X: 1
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1002230204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6333,7 +6379,7 @@ MonoBehaviour:
   X: 2
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1025504878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,7 +6480,7 @@ MonoBehaviour:
   X: 1
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1037268861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6535,7 +6581,7 @@ MonoBehaviour:
   X: -2
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1055604582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6799,7 +6845,7 @@ MonoBehaviour:
   X: -1
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1095347711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,7 +6946,7 @@ MonoBehaviour:
   X: 3
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1103300792
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,7 +7047,7 @@ MonoBehaviour:
   X: 0
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1115227178
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,7 +7148,7 @@ MonoBehaviour:
   X: 2
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1156111016
 GameObject:
   m_ObjectHideFlags: 0
@@ -7203,7 +7249,7 @@ MonoBehaviour:
   X: 0
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1195677980
 GameObject:
   m_ObjectHideFlags: 0
@@ -7304,7 +7350,7 @@ MonoBehaviour:
   X: -1
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
+  potionEffect: {fileID: 0}
 --- !u!1 &1216217229
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,7 +7451,7 @@ MonoBehaviour:
   X: -3
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1231097623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7765,7 +7811,7 @@ MonoBehaviour:
   X: -3
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1276264266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7866,7 +7912,7 @@ MonoBehaviour:
   X: -4
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1288819871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7967,7 +8013,7 @@ MonoBehaviour:
   X: -3
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1293366256
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,7 +8114,7 @@ MonoBehaviour:
   X: 1
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1300037917
 GameObject:
   m_ObjectHideFlags: 0
@@ -8081,7 +8127,7 @@ GameObject:
   - component: {fileID: 1300037920}
   - component: {fileID: 1300037919}
   m_Layer: 5
-  m_Name: Cauldron
+  m_Name: CauldronSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8246,7 +8292,7 @@ MonoBehaviour:
   X: -1
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1330645350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,7 +8483,7 @@ MonoBehaviour:
   X: -3
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1338756405
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,7 +8584,7 @@ MonoBehaviour:
   X: -4
   Y: 3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1349648123
 GameObject:
   m_ObjectHideFlags: 0
@@ -8639,7 +8685,7 @@ MonoBehaviour:
   X: -2
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1360931540
 GameObject:
   m_ObjectHideFlags: 0
@@ -8740,7 +8786,7 @@ MonoBehaviour:
   X: 0
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1368183419
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,7 +8954,7 @@ MonoBehaviour:
   X: -1
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1440766822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9009,7 +9055,7 @@ MonoBehaviour:
   X: 2
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1452131175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,7 +9291,7 @@ MonoBehaviour:
   X: 4
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1468209380
 GameObject:
   m_ObjectHideFlags: 0
@@ -9666,7 +9712,7 @@ MonoBehaviour:
   X: -1
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1566014149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,7 +9813,7 @@ MonoBehaviour:
   X: -2
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1001 &1626343550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10149,7 +10195,7 @@ MonoBehaviour:
   X: -4
   Y: -3
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1645102933
 GameObject:
   m_ObjectHideFlags: 0
@@ -10233,8 +10279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 661249856}
+        m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: ResetCauldron
         m_Mode: 1
         m_Arguments:
@@ -10383,7 +10429,7 @@ MonoBehaviour:
   X: -4
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1669569497
 GameObject:
   m_ObjectHideFlags: 0
@@ -10484,7 +10530,7 @@ MonoBehaviour:
   X: 0
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1670232723
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,7 +10708,7 @@ MonoBehaviour:
   X: -1
   Y: 1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1695761270
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,7 +10920,7 @@ MonoBehaviour:
   X: -2
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1708155104
 GameObject:
   m_ObjectHideFlags: 0
@@ -10975,7 +11021,7 @@ MonoBehaviour:
   X: 4
   Y: -1
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1742786292
 GameObject:
   m_ObjectHideFlags: 0
@@ -11076,7 +11122,7 @@ MonoBehaviour:
   X: -2
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1782074189
 GameObject:
   m_ObjectHideFlags: 0
@@ -11177,7 +11223,7 @@ MonoBehaviour:
   X: 4
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1785028112
 GameObject:
   m_ObjectHideFlags: 0
@@ -11432,7 +11478,7 @@ MonoBehaviour:
   X: -2
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1831049532
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,7 +11658,7 @@ MonoBehaviour:
   X: -3
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1866300877
 GameObject:
   m_ObjectHideFlags: 0
@@ -11713,7 +11759,7 @@ MonoBehaviour:
   X: 2
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1881613186
 GameObject:
   m_ObjectHideFlags: 0
@@ -11916,7 +11962,7 @@ MonoBehaviour:
   X: 0
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1893858742
 GameObject:
   m_ObjectHideFlags: 0
@@ -12017,7 +12063,7 @@ MonoBehaviour:
   X: 1
   Y: -2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1928477900
 GameObject:
   m_ObjectHideFlags: 0
@@ -12195,7 +12241,7 @@ MonoBehaviour:
   X: 4
   Y: -4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1946929207
 GameObject:
   m_ObjectHideFlags: 0
@@ -12296,7 +12342,7 @@ MonoBehaviour:
   X: -4
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &1991589095
 GameObject:
   m_ObjectHideFlags: 0
@@ -12397,7 +12443,7 @@ MonoBehaviour:
   X: -2
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &2000009985
 GameObject:
   m_ObjectHideFlags: 0
@@ -12498,7 +12544,7 @@ MonoBehaviour:
   X: 0
   Y: 2
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &2031367948
 GameObject:
   m_ObjectHideFlags: 0
@@ -12599,7 +12645,7 @@ MonoBehaviour:
   X: -3
   Y: 4
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &2066641486
 GameObject:
   m_ObjectHideFlags: 0
@@ -12713,7 +12759,7 @@ Canvas:
   m_GameObject: {fileID: 2106244938}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -13004,7 +13050,7 @@ MonoBehaviour:
   X: 3
   Y: 0
   initialColor: {r: 1, g: 1, b: 1, a: 1}
-  _effect: {fileID: 0}
+  potionEffect: {fileID: 0}
 --- !u!1 &2140151832
 GameObject:
   m_ObjectHideFlags: 0

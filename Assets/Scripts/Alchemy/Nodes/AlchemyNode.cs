@@ -8,9 +8,9 @@ namespace Alchemy.Nodes
       public int Y;
       public Color initialColor;
       
-      [SerializeField] private Effect _effect;
+      [SerializeField] private PotionEffect potionEffect;
 
-      public Effect GetEffect() => _effect;
+      public PotionEffect GetEffect() => potionEffect;
       
       public void SetSprite(Sprite sprite)
       {

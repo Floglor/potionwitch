@@ -111,7 +111,7 @@ namespace Novel
             }
         }
 
-        private void OpenPotionRequest(Effect effect)
+        private void OpenPotionRequest(PotionEffect potionEffect)
         {
             Debug.Log("Open potion request");
             _potionSlot.gameObject.SetActive(true);
@@ -125,7 +125,7 @@ namespace Novel
                     Debug.Log("provided item is not a potion");
                 }
                 else 
-                if (potion.GetEffectId() != effect.GetEffectId())
+                if (potion.GetEffectId() != potionEffect.GetEffectId())
                 {
                     Debug.Log("provided potion is not the correct effect");
                 }

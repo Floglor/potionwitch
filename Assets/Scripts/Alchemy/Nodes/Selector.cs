@@ -78,6 +78,9 @@ namespace Alchemy.Nodes
                 SelectNode(currentNode);
             }
 
+
+            if (_nodeDebugText == null) return;
+            
             if (currentNode.GetEffect() == null)
                 _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y}], Empty";
             else

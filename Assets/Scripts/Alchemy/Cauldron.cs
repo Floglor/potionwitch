@@ -19,11 +19,11 @@ namespace Alchemy
             UsedIngredients.Clear();
             UsedSelector?.ReturnCursor();
         }
-        public Potion ToPotion(Effect effect)
+        public Potion ToPotion(PotionEffect potionEffect)
         {
             float quality = ReturnQuality();
-            int price = (int) (effect.BaseCost * quality * 2);
-            return new Potion(effect.PotionSprite, effect.EffectName, price, quality, effect.EffectDescription, effect.GetEffectId());
+            int price = (int) (potionEffect.BaseCost * quality * 2);
+            return new Potion(potionEffect.PotionSprite, potionEffect.EffectName, price, quality, potionEffect.EffectDescription, potionEffect.GetEffectId());
         }
 
         public float ReturnQuality()

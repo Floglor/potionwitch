@@ -70,9 +70,11 @@ namespace Inventory
         
         private void FollowMouse()
         {
+            Debug.Log("MousePos:" + Input.mousePosition);
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = 10;
-            transform.position = Input.mousePosition / _canvas.scaleFactor;
+            transform.position = Input.mousePosition * _canvas.scaleFactor;
+            Debug.Log("ItemPos:" + transform.position);
         }
     }
 }

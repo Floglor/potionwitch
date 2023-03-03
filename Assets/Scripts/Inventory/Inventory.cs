@@ -131,6 +131,8 @@ namespace Inventory
             {
                 if (item.Equals(_inventoryItemsUI[i].TargetItem))
                 {
+                    if (_inventoryItemsUI[i].TargetItem is null) return;
+                    
                     Destroy(_inventoryItemsUI[i].gameObject);
                     _inventoryItemsUI.Remove(_inventoryItemsUI[i]);
                     break;
