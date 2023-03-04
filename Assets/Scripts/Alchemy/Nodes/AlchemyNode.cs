@@ -6,7 +6,7 @@ namespace Alchemy.Nodes
    {
       public int X;
       public int Y;
-      public Color initialColor;
+      public bool IsWall;
       
       [SerializeField] private PotionEffect potionEffect;
 
@@ -21,11 +21,7 @@ namespace Alchemy.Nodes
       {
           GetComponent<SpriteRenderer>().color = colour;
       }
-
-      private void Awake()
-      {
-          ColorNode(initialColor);
-      }
+      
       
    }
 }

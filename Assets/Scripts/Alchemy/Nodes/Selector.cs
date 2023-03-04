@@ -1,21 +1,31 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Alchemy.Nodes
 {
+    [RequireComponent(typeof(NodePainter))]
     public class Selector : MonoBehaviour
     {
-        public AlchemyNode currentNode;
+        public AlchemyNode CursorNode;
 
         public NodesHolder nodesHolder;
 
         [SerializeField] private TextMeshProUGUI _nodeDebugText;
+         private NodePainter _nodePainter;
+        
 
         private IAlchemySelectorTester _tester;
         private AlchemyNode _previousNode;
         private int _positionX;
         private int _positionY;
+
+        private void Awake()
+        {
+            _nodePainter = GetComponent<NodePainter>();
+        }
 
         [InfoBox("Disabled in Editor since editing material causes errors. Press play and Test")]
         [DisableInEditorMode]
@@ -37,7 +47,7 @@ namespace Alchemy.Nodes
             _positionX = x;
             _positionY = y;
 
-            ReselectNode();
+            ValidateNode();
         }
 
         public void MoveCursor(Move move)
@@ -48,64 +58,69 @@ namespace Alchemy.Nodes
 
         private void Start()
         {
-            currentNode = nodesHolder.GetNode(_positionX, _positionY);
-            //Eto konesh kostil))
+            CursorNode = nodesHolder.GetNode(_positionX, _positionY);
             ResetStartNode();
-            currentNode.ColorNode(Color.yellow);
+           _nodePainter.PaintSelection(CursorNode);
         }
 
         private void ResetStartNode()
         {
-            _previousNode = currentNode;
+            _previousNode = CursorNode;
         }
-        private void ResetAllNodeColors()
+        
+        private bool ValidateNode()
         {
-            foreach (AlchemyNode nodesHolderNode in nodesHolder.Nodes)
-            {
-                nodesHolderNode.ColorNode(nodesHolderNode.initialColor);
-            }
-        }
-
-        private void ReselectNode()
-        {
-            if (ChangeColorWhenSelected)
-            {
-                currentNode.ColorNode(currentNode.initialColor);
-            }
-
             if (_previousNode != null)
-                _previousNode.ColorNode(Color.blue);
+                _nodePainter.PaintPath(_previousNode);
 
-            _previousNode = currentNode;
-            currentNode = nodesHolder.GetNode(_positionX, _positionY);
+            _previousNode = CursorNode;
+            CursorNode = nodesHolder.GetNode(_positionX, _positionY);
 
-            if (currentNode == null)
+            if (CursorNode == null)
             {
-                currentNode = _previousNode;
-                _positionX = _previousNode.X;
-                _positionY = _previousNode.Y;
+                ReturnToPreviousPosition();
 
-                Debug.Log($"Map edge reached on [{currentNode.X}], [{currentNode.Y}]");
+                Debug.Log($"Map edge reached on [{CursorNode.X}], [{CursorNode.Y}]");
+                return false;
+            }
+
+            if (CursorNode.IsWall)
+            {
+                ReturnToPreviousPosition();
+                
+                Debug.Log($"Wall reached on [{CursorNode.X}], [{CursorNode.Y}]");
+                return false;
             }
 
             if (ChangeColorWhenSelected)
             {
-                currentNode.ColorNode(Color.yellow);
-                SelectNode(currentNode);
-            }
-            
-            if (_nodeDebugText == null) return;
+                _nodePainter.PaintSelection(CursorNode);
 
-            if (currentNode.GetEffect() == null)
-                _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y}], Empty";
+                SelectNode(CursorNode);
+            }
+
+            if (_nodeDebugText == null)
+                return true;
+
+            if (CursorNode.GetEffect() == null)
+                _nodeDebugText.text = $"Node: [{CursorNode.X}], [{CursorNode.Y}], Empty";
             else
-                _nodeDebugText.text = $"Node: [{currentNode.X}], [{currentNode.Y},] {currentNode.GetEffect().name}";
+                _nodeDebugText.text = $"Node: [{CursorNode.X}], [{CursorNode.Y},] {CursorNode.GetEffect().name}";
+
+            return true;
+        }
+
+        private void ReturnToPreviousPosition()
+        {
+            CursorNode = _previousNode;
+            _positionX = _previousNode.X;
+            _positionY = _previousNode.Y;
         }
 
         public void ApplyMove(Move move)
         {
             MoveCursor(move);
-            ReselectNode();
+            ValidateNode();
         }
 
         public void ApplyMoveSet(MoveSet moveSet)
@@ -115,15 +130,15 @@ namespace Alchemy.Nodes
                 ApplyMove(move);
             }
 
-            ReselectNode();
+            ValidateNode();
         }
 
         public void ReturnCursor()
         {
             MoveCursor(0, 0);
-            ResetAllNodeColors();
+            _nodePainter.ResetAllNodeColors();
             ResetStartNode();
-            ReselectNode();
+            ValidateNode();
         }
 
         public int PositionX

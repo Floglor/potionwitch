@@ -14,7 +14,6 @@ namespace Alchemy.Nodes
         [SerializeField] private int _testNodeRadius;
         [SerializeField] private int _spacing;
         [SerializeField] private List<Sprite> _starSprites;
-        
 
         [Button("Randomize Nodes Sprites"), GUIColor(0, 1, 1)]
         public void RandomizeNodesSprites()
@@ -64,12 +63,7 @@ namespace Alchemy.Nodes
         {
             AlchemyNode node = Instantiate(_testNode, new Vector3(x * _spacing, y * _spacing, 0),
                 Quaternion.identity);
-
-            // if (lastNode != null)
-            // {
-            //     PlaceLink(lastNode, node);
-            // }
-
+            
             lastNode = node;
             node.transform.SetParent(transform);
             node.X = x;

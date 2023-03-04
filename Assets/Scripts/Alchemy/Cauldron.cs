@@ -14,10 +14,10 @@ namespace Alchemy
         
         public void Brew()
         {
-            if (UsedSelector.currentNode.GetEffect() == null) 
+            if (UsedSelector.CursorNode.GetEffect() == null) 
                 return;
             
-            _inventory.SpawnItem(ToPotion(UsedSelector.currentNode.GetEffect()));
+            _inventory.SpawnItem(ToPotion(UsedSelector.CursorNode.GetEffect()));
             UsedIngredients.Clear();
             UsedSelector?.ReturnCursor();
         }
