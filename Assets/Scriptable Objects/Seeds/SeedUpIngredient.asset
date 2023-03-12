@@ -17,5 +17,5 @@ MonoBehaviour:
   _growthSpeed: 0
   Icon: {fileID: 1831078158, guid: f8277c11589d8154d8f95115147650ac, type: 3}
   Name: 
-  GrowingSprite: {fileID: -1244576950, guid: f8277c11589d8154d8f95115147650ac, type: 3}
-  RipeSprite: {fileID: 364208323, guid: f8277c11589d8154d8f95115147650ac, type: 3}
+  GrowingSprite: {fileID: 1250669592, guid: 87fb1ac951fbc9643a6cf63524f52119, type: 3}
+  RipeSprite: {fileID: 879647548, guid: 87fb1ac951fbc9643a6cf63524f52119, type: 3}
