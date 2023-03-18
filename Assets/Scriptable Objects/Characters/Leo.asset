@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad6088938a548ea81f4958da77dd802, type: 3}
+  m_Name: Leo
+  m_EditorClassIdentifier: 
+  Name: Leo (Rookie Adventurer)
+  DefaultSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+    type: 3}

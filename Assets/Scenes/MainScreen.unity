@@ -7470,7 +7470,7 @@ MonoBehaviour:
   X: -1
   Y: 2
   IsWall: 0
-  potionEffect: {fileID: 0}
+  potionEffect: {fileID: 11400000, guid: a69c666f5fc0b034d83f80f2a0b717c6, type: 2}
 --- !u!1 &1216217229
 GameObject:
   m_ObjectHideFlags: 0
