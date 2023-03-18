@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Witch_Sprites (1) 1_0
+      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_0"
       rect:
         serializedVersion: 2
         x: 151
@@ -147,7 +147,7 @@ TextureImporter:
         width: 108
         height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
         width: 122
         height: 133
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 108
         height: 143
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 125
         height: 118
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 118
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 75
         height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
         width: 120
         height: 136
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 111
         height: 134
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
         width: 44
         height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         width: 123
         height: 118
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 113
         height: 113
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
         width: 566
         height: 997
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
         width: 783
         height: 678
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Witch_Sprites (1) 1_13
+      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_13"
       rect:
         serializedVersion: 2
         x: 1163
@@ -420,7 +420,7 @@ TextureImporter:
         width: 201
         height: 201
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +441,7 @@ TextureImporter:
         width: 476
         height: 174
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,19 +469,16 @@ TextureImporter:
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_9": -3331868340893793718
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_6": 4224271884669651651
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_3": 3311540011030624131
-      Witch_Sprites (1) 1_0: 278703585262289181
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_1": 373573475074387249
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_11": 5801184204006751
-      Witch_Sprites (1) 1_3: -2010506355
-      Witch_Sprites (1) 1_13: -8528541718570800163
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_13": -8528541718570800163
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_14": -5774751912594757363
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_10": 4465556666720371842
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_4": -5497091490054806730
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_7": -7215003491757170432
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_8": 8545568746483760750
-      Witch_Sprites (1) 1_1: 1195379327
+      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_0": 278703585262289181
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_2": 8636565539528899236
-      Witch_Sprites (1) 1_2: 53245286
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
