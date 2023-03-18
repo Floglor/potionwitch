@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebea8f3248da483890ef1739f43e49c8, type: 3}
-  m_Name: Remove Itchy Test Effect
+  m_Name: Lesser Healing Potion
   m_EditorClassIdentifier: 
-  EffectName: Remove Itchy Test Effect
-  EffectDescription: Test Effect
+  EffectName: Lesser Healing Potion
+  EffectDescription: For adventurers without a penny
   PotionSprite: {fileID: 8545568746483760750, guid: 2191ab4b836919446bea8990389d53c1,
     type: 3}
   BaseCost: 0
