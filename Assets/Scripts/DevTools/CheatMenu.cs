@@ -2,6 +2,7 @@
 using Garden;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DevTools
 {
@@ -11,29 +12,35 @@ namespace DevTools
         [SerializeField] private Inventory.Inventory _inventory;
         [SerializeField] private Ingredient _ingredient;
         [SerializeField] private GardenSeed _seed;
+        [SerializeField] private PotionEffect _potionEffect;
 
         [Button("Add Ingredient")]
         private void AddItem()
         {
-            _inventory.AddItem(_ingredient);
+            if (_ingredient is null) return;
+            _inventory.SpawnItem(_ingredient);
         }
-        [SerializeField] private Effect _potionEffect;
+
 
         [Button("Add Potion")]
         private void AddPotion()
         {
-            _inventory.AddItem(_cauldron.ToPotion(_potionEffect));  
+            if (_potionEffect is null) return;
+            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect));
         }
 
         [Button("Add Seed")]
         private void AddSeed()
         {
-            _inventory.AddItem(_seed);
+            if (_seed is null) return;
+            _inventory.SpawnItem(_seed);
         }
 
-        //private void Start()
-        //{
-        //    GameObject button = Instantiate(_buttonPrefab, transform);
-        //}
+        private void Start()
+        {
+            AddItem();
+            AddPotion();
+            AddSeed();
+        }
     }
 }

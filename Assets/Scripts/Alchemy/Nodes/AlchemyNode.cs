@@ -6,19 +6,22 @@ namespace Alchemy.Nodes
    {
       public int X;
       public int Y;
-      public Color initialColor;
+      public bool IsWall;
       
-      [SerializeField] private Effect _effect;
+      [SerializeField] private PotionEffect potionEffect;
 
-      public Effect GetEffect() => _effect;
+      public PotionEffect GetEffect() => potionEffect;
+      
+      public void SetSprite(Sprite sprite)
+      {
+          GetComponent<SpriteRenderer>().sprite = sprite;
+      }
+      
       public void ColorNode(Color colour)
       {
           GetComponent<SpriteRenderer>().color = colour;
       }
-
-      private void Awake()
-      {
-          ColorNode(initialColor);
-      }
+      
+      
    }
 }

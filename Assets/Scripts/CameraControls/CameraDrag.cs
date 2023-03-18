@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace CameraControls
 {
@@ -7,6 +8,12 @@ namespace CameraControls
         public float dragSpeed = 2;
         private Vector3 _dragOrigin;
 
+        private Camera _mainCamera;
+
+        private void Start()
+        {
+            _mainCamera = Camera.main;
+        }
 
         private void Update()
         {
@@ -15,15 +22,18 @@ namespace CameraControls
                 _dragOrigin = Input.mousePosition;
                 return;
             }
- 
+
             if (!Input.GetMouseButton(0)) return;
- 
-            Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - _dragOrigin);
-            Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0);
- 
-            transform.Translate(move, Space.World);  
+
+            MoveCamera();
         }
- 
- 
+
+        private void MoveCamera()
+        {
+            Vector3 pos = _mainCamera.ScreenToViewportPoint(Input.mousePosition - _dragOrigin);
+            Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0);
+
+            _mainCamera.transform.Translate(move, Space.World);
+        }
     }
 }

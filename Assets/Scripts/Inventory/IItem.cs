@@ -4,7 +4,7 @@ namespace Inventory
 {
     public interface IItem
     {
-        Sprite GetIcon();
-        string GetName();
+            Sprite GetIcon();
+            string GetName();
     }
 }

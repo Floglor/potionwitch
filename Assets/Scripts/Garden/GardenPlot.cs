@@ -48,7 +48,7 @@ namespace Garden
             {
                 Debug.Log("Got ingredient!");
                 _futureIngredient = _seed.GetIngredient();
-                GlobalAccess.Instance.Inventory.AddItem(_futureIngredient);
+                GlobalAccess.Instance.Inventory.SpawnItem(_futureIngredient);
 
                 _ingredientReady = false;
                 IsPlanted = false;

@@ -43,7 +43,7 @@ namespace Novel
         public DialogueInterruptType InterruptType;
             
         [ShowIf("@this.IsInterrupted == true && this.InterruptType == DialogueInterruptType.Potion")]
-        public Effect interruptionPotion;
+        public PotionEffect interruptionPotion;
         
         [ShowIf("@this.IsInterrupted == true && this.InterruptType == DialogueInterruptType.Choice")]
         public List<Choice> InterruptionChoices;

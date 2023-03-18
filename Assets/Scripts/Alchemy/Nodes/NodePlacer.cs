@@ -13,7 +13,18 @@ namespace Alchemy.Nodes
         [SerializeField] private GameObject _link;
         [SerializeField] private int _testNodeRadius;
         [SerializeField] private int _spacing;
+        [SerializeField] private List<Sprite> _starSprites;
 
+        [Button("Randomize Nodes Sprites"), GUIColor(0, 1, 1)]
+        public void RandomizeNodesSprites()
+        {
+            List<AlchemyNode> alchemyNodes = FindAllNodes();
+
+            foreach (AlchemyNode alchemyNode in alchemyNodes)
+            {
+                alchemyNode.SetSprite(_starSprites[Random.Range(0, _starSprites.Count)]);
+            }
+        }
 
         [Button("Place Nodes"), GUIColor(0, 1, 1)]
         public void PlaceNodes()
@@ -52,12 +63,7 @@ namespace Alchemy.Nodes
         {
             AlchemyNode node = Instantiate(_testNode, new Vector3(x * _spacing, y * _spacing, 0),
                 Quaternion.identity);
-
-            // if (lastNode != null)
-            // {
-            //     PlaceLink(lastNode, node);
-            // }
-
+            
             lastNode = node;
             node.transform.SetParent(transform);
             node.X = x;

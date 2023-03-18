@@ -319,9 +319,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -345,8 +345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &62659207
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,9 +496,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -522,8 +522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &77700620
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,8 +556,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!212 &77700622
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -598,9 +598,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -854,9 +854,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -880,8 +880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &158470993
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,9 +955,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -981,8 +981,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &171785569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,9 +1056,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1082,8 +1082,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &194385849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1156,154 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194385849}
   m_CullTransparentMesh: 0
+--- !u!1 &204040749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204040750}
+  - component: {fileID: 204040752}
+  - component: {fileID: 204040751}
+  - component: {fileID: 204040753}
+  m_Layer: 5
+  m_Name: DateDebug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &204040750
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204040749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2066641487}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.14553587, y: 0.06639581}
+  m_AnchoredPosition: {x: 1.5, y: -0.5}
+  m_SizeDelta: {x: 3, y: -1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &204040751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204040749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Date
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &204040752
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204040749}
+  m_CullTransparentMesh: 1
+--- !u!114 &204040753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204040749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e421c1108b534e429ccad7654073fc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225911043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,9 +1377,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1255,8 +1403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &239268245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,9 +1478,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1356,8 +1504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &248825325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,9 +1579,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1457,8 +1605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &266706183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,9 +1815,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1693,8 +1841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &277731840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,15 +1873,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1727628660}
+  m_Children: []
   m_Father: {fileID: 2066641487}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20418157, y: 0.059885394}
   m_AnchorMax: {x: 0.31300002, y: 0.093739554}
-  m_AnchoredPosition: {x: 4.5, y: -3}
-  m_SizeDelta: {x: 11, y: 4}
+  m_AnchoredPosition: {x: 3.500061, y: 55.5}
+  m_SizeDelta: {x: 11, y: 38.000034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277731842
 MonoBehaviour:
@@ -1779,8 +1926,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1300037921}
+        m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: Brew
         m_Mode: 1
         m_Arguments:
@@ -1811,9 +1958,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 2051104862, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1965,6 +2112,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318099021}
   m_CullTransparentMesh: 1
+--- !u!1001 &345351250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1695761271}
+    m_Modifications:
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Name
+      value: Garden Plot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: decd4ac27f6cd124c8fa8f62257f801c, type: 3}
+--- !u!4 &345351251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+    type: 3}
+  m_PrefabInstance: {fileID: 345351250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &354152017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,9 +2267,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2064,8 +2293,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1001 &404356668
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1695761271}
+    m_Modifications:
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Name
+      value: Garden Plot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: decd4ac27f6cd124c8fa8f62257f801c, type: 3}
+--- !u!4 &404356669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+    type: 3}
+  m_PrefabInstance: {fileID: 404356668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406817144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,9 +2450,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2165,8 +2476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &411368290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,9 +2551,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2266,8 +2577,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &419204195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,9 +2690,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2405,8 +2716,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &446617431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,9 +2791,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2506,8 +2817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &451798779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,9 +2892,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2607,8 +2918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &459774024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,9 +2993,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2708,8 +3019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &489611155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,9 +3094,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2809,8 +3120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &494571840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,11 +3151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b413c916464cfdb451270a5c562c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cauldron: {fileID: 0}
+  _cauldron: {fileID: 1300037921}
   _inventory: {fileID: 497182963}
   _ingredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
-  _seed: {fileID: 0}
-  _potionEffect: {fileID: 0}
+  _seed: {fileID: 11400000, guid: 3022dfbbe56d8a849825120f7a4b48a1, type: 2}
+  _potionEffect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
 --- !u!4 &494571842
 Transform:
   m_ObjectHideFlags: 0
@@ -2858,7 +3169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &497182959 stripped
 RectTransform:
@@ -2951,9 +3262,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2977,8 +3288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,7 +3301,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3006,19 +3317,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d74b578d160f46fc91ad834437c27483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragSpeed: 0.05
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3073,10 +3371,27 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 845803934}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 512
+  m_MaxRayIntersections: 0
 --- !u!1 &556932556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3254,9 +3569,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3280,8 +3595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &601428533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,9 +3670,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3381,8 +3696,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &659245207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,9 +3771,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3482,8 +3797,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &660193796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,9 +3872,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3583,55 +3898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
---- !u!1 &661249853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 661249855}
-  - component: {fileID: 661249856}
-  m_Layer: 0
-  m_Name: Cauldron
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &661249855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661249853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -4.65, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &661249856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661249853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c61e537f31415caf85648cd24c7d02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UsedSelector: {fileID: 969818849}
-  UsedIngredients: []
-  _inventory: {fileID: 497182963}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &673739357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,9 +3973,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3731,8 +3999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &690298541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3853,86 +4121,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690298541}
-  m_CullTransparentMesh: 0
---- !u!1 &708693321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 708693322}
-  - component: {fileID: 708693324}
-  - component: {fileID: 708693323}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &708693322
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708693321}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1645102934}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &708693323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708693321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Reset Cauldron
---- !u!222 &708693324
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708693321}
   m_CullTransparentMesh: 0
 --- !u!1 &716575553
 GameObject:
@@ -4250,9 +4438,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4276,8 +4464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &777292409
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,9 +4539,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4377,8 +4565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &803066351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4452,9 +4640,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4478,8 +4666,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &808113522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,9 +4741,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4579,8 +4767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &808954895
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,9 +4842,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4680,8 +4868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &812741659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,9 +4943,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4781,8 +4969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &822426590
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,9 +5044,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4882,8 +5070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &830835788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,9 +5145,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4983,8 +5171,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &845803933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 845803934}
+  - component: {fileID: 845803935}
+  m_Layer: 0
+  m_Name: CameraDrag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &845803934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845803933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845803935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845803933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74b578d160f46fc91ad834437c27483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragSpeed: 0.05
 --- !u!1 &873004539
 GameObject:
   m_ObjectHideFlags: 0
@@ -5121,9 +5354,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5147,8 +5380,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &946674573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946674574}
+  - component: {fileID: 946674575}
+  m_Layer: 0
+  m_Name: StateController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946674574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946674573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 770.1934, y: 433.21533, z: -8.811877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946674575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946674573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33e64a8855054549a917b5cac1db2aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areIngredientsSelectable: 1
+  arePotionsSelectable: 0
 --- !u!1 &961682934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,6 +5574,7 @@ GameObject:
   - component: {fileID: 969818851}
   - component: {fileID: 969818849}
   - component: {fileID: 969818850}
+  - component: {fileID: 969818852}
   m_Layer: 0
   m_Name: Selector
   m_TagString: Untagged
@@ -5314,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ef4fcd0b54fa5043b2544ed8602d697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentNode: {fileID: 0}
+  CursorNode: {fileID: 0}
   nodesHolder: {fileID: 1231097624}
   _nodeDebugText: {fileID: 0}
   ChangeColorWhenSelected: 1
@@ -5347,8 +5627,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969818852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969818848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b6bf80bd1c4820a55edc6e6e877c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _holder: {fileID: 1231097624}
+  _wallColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+  _selectionColor: {r: 1, g: 0.8374637, b: 0.3254717, a: 1}
+  _initialColor: {r: 1, g: 1, b: 1, a: 1}
+  _pathColor: {r: 0.5882353, g: 0.41037738, b: 1, a: 1}
+  _potionColor: {r: 0.18396229, g: 0.5207813, b: 1, a: 1}
 --- !u!1 &972405832
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,9 +5720,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5448,8 +5746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &987288920
 GameObject:
   m_ObjectHideFlags: 0
@@ -5523,9 +5821,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5549,8 +5847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &987422514
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,7 +5960,7 @@ Transform:
   - {fileID: 987288921}
   - {fileID: 77700623}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &987422516
 MonoBehaviour:
@@ -5683,6 +5981,12 @@ MonoBehaviour:
   _link: {fileID: 4053169729750612204, guid: f1d5f842249adda4d9b4b479ba91d139, type: 3}
   _testNodeRadius: 4
   _spacing: 2
+  _starSprites:
+  - {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  - {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  - {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  - {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  - {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
 --- !u!1 &997683198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,9 +6060,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5782,8 +6086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &998903917
 GameObject:
   m_ObjectHideFlags: 0
@@ -5857,9 +6161,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5883,8 +6187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1000192467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5958,9 +6262,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5984,8 +6288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1002230204
 GameObject:
   m_ObjectHideFlags: 0
@@ -6168,9 +6472,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6194,8 +6498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1025504878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6269,9 +6573,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6295,8 +6599,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1037268861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6370,9 +6674,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6396,8 +6700,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1055604582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6452,7 +6756,7 @@ GameObject:
   - component: {fileID: 1059426690}
   - component: {fileID: 1059426689}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: EnergyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6498,8 +6802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7209833793760370077, guid: afdc6a691183ac642b98cafe03550a55,
-    type: 3}
+  m_Sprite: {fileID: -1421603544, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6517,6 +6820,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059426687}
   m_CullTransparentMesh: 0
+--- !u!1 &1074459791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074459793}
+  - component: {fileID: 1074459792}
+  m_Layer: 0
+  m_Name: GlobalAccess
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1074459792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074459791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944e24418815f3c47ad81529db77b0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: {fileID: 497182963}
+--- !u!4 &1074459793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074459791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4163926, y: 0.35106695, z: 0.034825865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094107806
 GameObject:
   m_ObjectHideFlags: 0
@@ -6590,9 +6938,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6616,8 +6964,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1095347711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,9 +7039,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6717,8 +7065,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1103300792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6792,9 +7140,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6818,8 +7166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1115227178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,9 +7241,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6919,8 +7267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1156111016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6994,9 +7342,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7020,8 +7368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1195677980
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,9 +7443,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7121,8 +7469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0.84313726, a: 1}
-  _effect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1216217229
 GameObject:
   m_ObjectHideFlags: 0
@@ -7196,9 +7544,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7222,8 +7570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1231097623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,7 +7696,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242005532
 GameObject:
@@ -7556,9 +7904,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7582,8 +7930,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1276264266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7657,9 +8005,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7683,8 +8031,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1288819871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7758,9 +8106,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7784,8 +8132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1293366256
 GameObject:
   m_ObjectHideFlags: 0
@@ -7859,9 +8207,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7885,8 +8233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1300037917
 GameObject:
   m_ObjectHideFlags: 0
@@ -7898,8 +8246,9 @@ GameObject:
   - component: {fileID: 1300037918}
   - component: {fileID: 1300037920}
   - component: {fileID: 1300037919}
+  - component: {fileID: 1300037921}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7964,6 +8313,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300037917}
   m_CullTransparentMesh: 0
+--- !u!114 &1300037921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300037917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c61e537f31415caf85648cd24c7d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsedSelector: {fileID: 969818849}
+  UsedIngredients: []
+  _inventory: {fileID: 497182963}
 --- !u!1 &1307583684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8037,9 +8401,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8063,8 +8427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1330645350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8228,9 +8592,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8254,8 +8618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1338756405
 GameObject:
   m_ObjectHideFlags: 0
@@ -8329,9 +8693,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8355,8 +8719,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: 3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1349648123
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,9 +8794,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8456,8 +8820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1360931540
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,9 +8895,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8557,8 +8921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1368183419
 GameObject:
   m_ObjectHideFlags: 0
@@ -8624,7 +8988,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1374716151
 GameObject:
@@ -8699,9 +9063,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8725,8 +9089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1440766822
 GameObject:
   m_ObjectHideFlags: 0
@@ -8800,9 +9164,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8826,8 +9190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1452131175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,9 +9400,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9062,8 +9426,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &1468209380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468209381}
+  - component: {fileID: 1468209383}
+  - component: {fileID: 1468209382}
+  m_Layer: 5
+  m_Name: SpaceBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1468209381
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468209380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1881613187}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1468209382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468209380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1468209383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468209380}
+  m_CullTransparentMesh: 1
 --- !u!1 &1475898432
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,7 +9593,7 @@ GameObject:
   - component: {fileID: 1486376655}
   - component: {fileID: 1486376654}
   m_Layer: 5
-  m_Name: Image
+  m_Name: GoldImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9199,8 +9639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4957754216850451042, guid: afdc6a691183ac642b98cafe03550a55,
-    type: 3}
+  m_Sprite: {fileID: 321655601, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9255,7 +9694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -55.94}
+  m_AnchoredPosition: {x: 0, y: -55.940002}
   m_SizeDelta: {x: -17, y: -72.937805}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1486464069
@@ -9382,9 +9821,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9408,8 +9847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1566014149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9483,9 +9922,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9509,8 +9948,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1001 &1626343550
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1695761271}
+    m_Modifications:
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Name
+      value: Garden Plot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: decd4ac27f6cd124c8fa8f62257f801c, type: 3}
+--- !u!4 &1626343551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1626343550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629168922
 GameObject:
   m_ObjectHideFlags: 0
@@ -9783,9 +10304,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9809,8 +10330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -3
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1645102933
 GameObject:
   m_ObjectHideFlags: 0
@@ -9841,15 +10362,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 708693322}
+  m_Children: []
   m_Father: {fileID: 2066641487}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20418157, y: 0}
   m_AnchorMax: {x: 0.31949782, y: 0.0364375}
-  m_AnchoredPosition: {x: -0.5, y: 1}
-  m_SizeDelta: {x: 3, y: 2}
+  m_AnchoredPosition: {x: -0.5, y: 16}
+  m_SizeDelta: {x: 3, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1645102935
 MonoBehaviour:
@@ -9895,8 +10415,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1300037921}
+        m_TargetAssemblyTypeName: Alchemy.Cauldron, Assembly-CSharp
         m_MethodName: ResetCauldron
         m_Mode: 1
         m_Arguments:
@@ -9927,9 +10447,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 1135519859, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -10018,9 +10538,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10044,8 +10564,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1669569497
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,9 +10639,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10145,8 +10665,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1670232723
 GameObject:
   m_ObjectHideFlags: 0
@@ -10297,9 +10817,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10323,8 +10843,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &1695761270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695761271}
+  m_Layer: 0
+  m_Name: Garden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1695761271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695761270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1626343551}
+  - {fileID: 404356669}
+  - {fileID: 345351251}
+  - {fileID: 1795992242}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696088906
 GameObject:
   m_ObjectHideFlags: 0
@@ -10474,9 +11029,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10500,8 +11055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1708155104
 GameObject:
   m_ObjectHideFlags: 0
@@ -10575,9 +11130,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10601,88 +11156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -1
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
---- !u!1 &1727628659
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1727628660}
-  - component: {fileID: 1727628662}
-  - component: {fileID: 1727628661}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1727628660
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727628659}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 277731841}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1727628661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727628659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Brew
---- !u!222 &1727628662
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727628659}
-  m_CullTransparentMesh: 0
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1742786292
 GameObject:
   m_ObjectHideFlags: 0
@@ -10756,9 +11231,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10782,8 +11257,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &1757832554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757832555}
+  - component: {fileID: 1757832556}
+  m_Layer: 0
+  m_Name: TimeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1757832555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757832554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.140223, y: 3.7337894, z: -0.11019637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1757832556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757832554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440e122184fe3254b8c92cc3b2fbbf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  date: 0
 --- !u!1 &1782074189
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,9 +11377,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10883,8 +11403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1785028112
 GameObject:
   m_ObjectHideFlags: 0
@@ -10957,6 +11477,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1795992241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 1695761271}
+    m_Modifications:
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Name
+      value: Garden Plot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390900, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: decd4ac27f6cd124c8fa8f62257f801c, type: 3}
+--- !u!4 &1795992242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6436652224446390902, guid: decd4ac27f6cd124c8fa8f62257f801c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1795992241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1807433936
 GameObject:
   m_ObjectHideFlags: 0
@@ -11030,9 +11632,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11056,8 +11658,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1831049532
 GameObject:
   m_ObjectHideFlags: 0
@@ -11210,9 +11812,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11236,8 +11838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1866300877
 GameObject:
   m_ObjectHideFlags: 0
@@ -11311,9 +11913,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11337,8 +11939,110 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
+--- !u!1 &1881613186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881613187}
+  - component: {fileID: 1881613190}
+  - component: {fileID: 1881613189}
+  - component: {fileID: 1881613188}
+  m_Layer: 5
+  m_Name: BackgroundCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1881613187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881613186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1468209381}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1881613188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881613186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 311
+--- !u!114 &1881613189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881613186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1881613190
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881613186}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_TargetDisplay: 0
 --- !u!1 &1883287032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11412,9 +12116,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11438,8 +12142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1893858742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11513,9 +12217,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11539,8 +12243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1928477900
 GameObject:
   m_ObjectHideFlags: 0
@@ -11691,9 +12395,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -693962161, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11717,8 +12421,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1946929207
 GameObject:
   m_ObjectHideFlags: 0
@@ -11792,9 +12496,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11818,8 +12522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &1991589095
 GameObject:
   m_ObjectHideFlags: 0
@@ -11893,9 +12597,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1205908956, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11919,8 +12623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &2000009985
 GameObject:
   m_ObjectHideFlags: 0
@@ -11994,9 +12698,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 2045502686, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12020,8 +12724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: 2
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 1
+  potionEffect: {fileID: 0}
 --- !u!1 &2031367948
 GameObject:
   m_ObjectHideFlags: 0
@@ -12095,9 +12799,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1279048644, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12121,8 +12825,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: 4
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &2066641486
 GameObject:
   m_ObjectHideFlags: 0
@@ -12159,6 +12863,7 @@ RectTransform:
   - {fileID: 1300037918}
   - {fileID: 1486376653}
   - {fileID: 1059426688}
+  - {fileID: 204040750}
   m_Father: {fileID: 2106244942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12237,7 +12942,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -12268,7 +12973,7 @@ RectTransform:
   - {fileID: 497182959}
   - {fileID: 318099022}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12294,11 +12999,17 @@ MonoBehaviour:
     ActivatedObjects:
     - {fileID: 2066641486}
     - {fileID: 987422514}
+    - {fileID: 1468209380}
+    - {fileID: 845803933}
     Index: 0
   - Name: Novel
     ActivatedObjects:
     - {fileID: 1055604582}
     Index: -1
+  - Name: 
+    ActivatedObjects:
+    - {fileID: 1695761270}
+    Index: 1
 --- !u!1 &2120901779
 GameObject:
   m_ObjectHideFlags: 0
@@ -12494,9 +13205,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cf05364f16e64340a037296acf4d0d8, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: -1546273614, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12520,8 +13231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 0
-  initialColor: {r: 0, g: 0, b: 0, a: 1}
-  _effect: {fileID: 0}
+  IsWall: 0
+  potionEffect: {fileID: 0}
 --- !u!1 &2140151832
 GameObject:
   m_ObjectHideFlags: 0
@@ -12660,7 +13371,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _cauldron
       value: 
-      objectReference: {fileID: 661249856}
+      objectReference: {fileID: 1300037921}
     - target: {fileID: 8606114062876428370, guid: d51d6ab682246d944881fa4a09ddc1b9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -12776,10 +13487,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8606114063786036923, guid: d51d6ab682246d944881fa4a09ddc1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.899994
+      objectReference: {fileID: 0}
     - target: {fileID: 8606114064424475396, guid: d51d6ab682246d944881fa4a09ddc1b9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606114064424475396, guid: d51d6ab682246d944881fa4a09ddc1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000022887705
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

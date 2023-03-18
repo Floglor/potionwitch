@@ -7,6 +7,12 @@ namespace Alchemy.Nodes
     {
         [SerializeField] private List<AlchemyNode> _nodes;
 
+        public List<AlchemyNode> Nodes
+        {
+            get => _nodes;
+            set => _nodes = value;
+        }
+
         public AlchemyNode GetNode(int x, int y)
         {
             foreach (AlchemyNode alchemyNode in _nodes)
@@ -17,7 +23,7 @@ namespace Alchemy.Nodes
                 }
             }
 
-            return null;
+            return null;    
         }
 
         public void AddNode(AlchemyNode node)
