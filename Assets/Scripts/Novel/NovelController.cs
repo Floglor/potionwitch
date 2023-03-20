@@ -30,6 +30,9 @@ namespace Novel
         private bool _isPaused;
         private Dialogue _currentDialogue;
         private int _currentDialogueIndex;
+        
+        //OnEndDialogue event
+        public event System.Action OnEndDialogue;
 
 
         public void StartDialogue(Dialogue dialogue)
@@ -195,6 +198,7 @@ namespace Novel
             PauseInteractions();
             ClearText();
             Debug.Log("end dialogue");
+            OnEndDialogue?.Invoke();
         }
 
         private void ClearText()
