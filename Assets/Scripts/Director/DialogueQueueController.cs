@@ -9,6 +9,8 @@ namespace Director
         private Queue<Dialogue> _dialogueQueue;
         private NovelController _novelController;
         
+        //on end dialogue event
+        public event System.Action OnEndDialogue;
         public void Start()
         {
             _dialogueQueue = new Queue<Dialogue>();
@@ -21,6 +23,11 @@ namespace Director
             _dialogueQueue.Enqueue(dialogue);
         }
 
+        public void ResetDialogue()
+        {
+            _novelController.ResetCurrentDialogue();
+        }
+        
         private void EndDialogue()
         {
             _dialogueQueue.Dequeue();
@@ -29,6 +36,8 @@ namespace Director
             {
                 _novelController.StartDialogue(_dialogueQueue.Peek());
             }
+            
+            OnEndDialogue?.Invoke();
         }
         
         public Dialogue GetDialogue()

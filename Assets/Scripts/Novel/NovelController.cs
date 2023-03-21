@@ -35,6 +35,11 @@ namespace Novel
         public event System.Action OnEndDialogue;
 
 
+        public void ResetCurrentDialogue()
+        {
+            StartDialogue(_currentDialogue);
+        }
+
         public void StartDialogue(Dialogue dialogue)
         {
             _isPaused = false;
