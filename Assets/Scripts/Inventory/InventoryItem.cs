@@ -1,5 +1,4 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,6 +16,9 @@ namespace Inventory
         private Canvas _canvas;
         private CanvasGroup _canvasGroup;
         private Transform _originalParentTransform;
+
+        [HideInInspector]
+        public bool IsHeld;
 
         private void Start()
         {
@@ -53,6 +55,7 @@ namespace Inventory
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            IsHeld = false;
             _originalParentTransform = transform.parent;
             Debug.Log("OnBeginDrag");
             _canvasGroup.blocksRaycasts = false;
@@ -63,7 +66,12 @@ namespace Inventory
         {
             Debug.Log("OnEndDrag");
             _canvasGroup.blocksRaycasts = true;
-            transform.SetParent(_originalParentTransform);
+            ISnapBack snapTarget = _originalParentTransform.gameObject.GetComponent<ISnapBack>();
+
+            if (IsHeld) return;
+            
+            snapTarget?.SnapBack(this);
+            IsHeld = true;
         }
 
         public void OnDrag(PointerEventData eventData)

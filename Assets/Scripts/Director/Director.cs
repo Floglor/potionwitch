@@ -35,6 +35,7 @@ namespace Director
                 if (questDate.date == timeController.date)
                 {
                     StartQuest(questDate.quest);
+                    Debug.Log("Starting quest " + questDate.quest.QuestName + " at date " + timeController.date + "");
                 }
             }
             
@@ -43,6 +44,7 @@ namespace Director
                 if (phaseDate.date == timeController.date)
                 {
                     StartPhase(phaseDate.phase);
+                    Debug.Log("Starting phase " + phaseDate.phase.name + " at date " + timeController.date + "");
                 }
             }
         }
@@ -54,23 +56,29 @@ namespace Director
         
         private void StartPhase(QuestPhase questPhase)
         {
-            _dialogueQueueController.AddDialogue(questPhase.PhaseDialogue);
+            _dialogueQueueController.AddDialogue(questPhase.PhaseDialogue, questPhase);
         }
-        
-        public void EndQuest(Quest quest)
+
+        private void EndQuest(Quest quest)
         {
             quest.IsCompleted = true;
+            CompletedQuests.Add(quest);
+            Debug.Log("Quest " + quest.QuestName + " completed");
         }
         
-        public void EndPhase(QuestPhase questPhase, Quest quest, QuestPhase nextPhase = null)
+        public void EndPhase(QuestPhase questPhase, Quest quest)
         {
             questPhase.IsCompleted = true;
-
+            CompletedPhases.Add(questPhase);
+            Debug.Log("Phase " + questPhase.name + " completed");
+            
             Phases.Remove(Phases.Find(phaseDate => phaseDate.phase == questPhase));
 
+            QuestPhase nextPhase = FindNextPhase(questPhase, quest);
+            
             if (nextPhase == null)
             {
-                quest.IsCompleted = true;
+                EndQuest(quest);
                 return;
             }
             
@@ -83,11 +91,27 @@ namespace Director
                 };
                 
                 Phases.Add(phaseDate);
+                Debug.Log("Phase " + nextPhase.name + " will start at date " + phaseDate.date + "");
             }
             else
             {
                 StartPhase(nextPhase);
             }
+        }
+
+        private static QuestPhase FindNextPhase(QuestPhase questPhase, Quest quest)
+        {
+            QuestPhase nextPhase = null;
+            foreach (QuestPhase phase in quest.Phases)
+            {
+                if (questPhase == phase)
+                {
+                    nextPhase = phase;
+                    break;
+                }
+            }
+
+            return nextPhase;
         }
     }
 

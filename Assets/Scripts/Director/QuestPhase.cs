@@ -10,20 +10,23 @@ namespace Director
         public int NextPhaseTime;
         public Dialogue PhaseDialogue;
         public List<QuestPhase> BlockedPhases;
+        public Quest LinkedQuest;
 
+        private bool _isCompleted;
         public bool IsCompleted
         {
-            get => IsCompleted;
+            get => _isCompleted;
             set
             {
-                IsCompleted = value;
-
-                if (value == true)
+                _isCompleted = value;
+                
+                if (value)
                 {
                     UnblockPhases();
                 }
             }
         }
+        
 
         private void UnblockPhases() => BlockedPhases.ForEach(phase => phase.isBlocked = false);
     }

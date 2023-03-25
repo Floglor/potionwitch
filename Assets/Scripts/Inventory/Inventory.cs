@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Inventory
 {
-    public class Inventory : MonoBehaviour, IDropHandler
+    public class Inventory : MonoBehaviour, IDropHandler, ISnapBack
     {
         public List<IItem> items = new List<IItem>();
         [SerializeField] private Cauldron _cauldron;
@@ -157,13 +157,19 @@ namespace Inventory
                 return;
             }
 
-            if (droppedItem.GetComponent<InventoryItem>() != null) 
+            InventoryItem item = droppedItem.GetComponent<InventoryItem>();
+            
+            if (item != null) 
             {
-                AddItem(droppedItem.GetComponent<InventoryItem>());
+                AddItem(item);
+                item.IsHeld = true;
             }
             
         }
 
-        
+        public void SnapBack(InventoryItem item)
+        {
+            item.transform.SetParent(transform);
+        }
     }
 }

@@ -4,46 +4,63 @@ using UnityEngine;
 
 namespace Director
 {
+    public class PhaseDialogue
+    {
+        public Dialogue Dialogue;
+        public QuestPhase Phase;
+
+        public PhaseDialogue(Dialogue dialogue, QuestPhase phase)
+        {
+            Dialogue = dialogue;
+            Phase = phase;
+        }
+    }
+
     public class DialogueQueueController : MonoBehaviour
     {
-        private Queue<Dialogue> _dialogueQueue;
+        private Queue<PhaseDialogue> _dialogueQueue;
         private NovelController _novelController;
-        
-        //on end dialogue event
-        public event System.Action OnEndDialogue;
+
         public void Start()
         {
-            _dialogueQueue = new Queue<Dialogue>();
+            _dialogueQueue = new Queue<PhaseDialogue>();
             _novelController = FindObjectOfType<NovelController>();
             _novelController.OnEndDialogue += EndDialogue;
         }
-        
-        public void AddDialogue(Dialogue dialogue)
+
+        public void AddDialogue(Dialogue dialogue, QuestPhase questPhase = null)
         {
-            _dialogueQueue.Enqueue(dialogue);
+            _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
+
+            _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);
         }
 
         public void ResetDialogue()
         {
             _novelController.ResetCurrentDialogue();
         }
-        
+
         private void EndDialogue()
         {
-            _dialogueQueue.Dequeue();
+            PhaseDialogue phaseDialogue = _dialogueQueue.Peek();
             
-            if (_dialogueQueue.Count > 0)
+            if (phaseDialogue.Phase != null)
             {
-                _novelController.StartDialogue(_dialogueQueue.Peek());
+                phaseDialogue.Phase.IsCompleted = true;
+                FindObjectOfType<Director>().EndPhase(phaseDialogue.Phase, phaseDialogue.Phase.LinkedQuest);
             }
             
-            OnEndDialogue?.Invoke();
+            _dialogueQueue.Dequeue();
+
+            if (_dialogueQueue.Count > 0)
+            {
+                _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);
+            }
         }
-        
+
         public Dialogue GetDialogue()
         {
-            return _dialogueQueue.Peek();
+            return _dialogueQueue.Peek().Dialogue;
         }
-        
     }
 }
