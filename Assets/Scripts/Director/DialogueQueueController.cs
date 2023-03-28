@@ -30,6 +30,7 @@ namespace Director
 
         public void AddDialogue(Dialogue dialogue, QuestPhase questPhase = null)
         {
+            Debug.Log($"Adding dialogue {dialogue.name}");
             _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
 
             _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);

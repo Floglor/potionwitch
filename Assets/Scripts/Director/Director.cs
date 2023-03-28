@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Misc;
+using Sirenix.Utilities;
 using UnityEngine;
 
 namespace Director
@@ -9,8 +10,8 @@ namespace Director
     {
         private TimeController _timeController;
         private DialogueQueueController _dialogueQueueController;
-        public List<QuestDate> Quests;
-        public List<PhaseDate> Phases;
+        public List<Quest> Quests;
+        public List<PhaseAndDate> Phases;
         
         public List<Quest> CompletedQuests;
         public List<QuestPhase> CompletedPhases;
@@ -30,32 +31,44 @@ namespace Director
 
         private void CheckDate(TimeController timeController)
         {
-            foreach (QuestDate questDate in Quests)
+            foreach (Quest questDate in Quests)
             {
-                if (questDate.date == timeController.date)
+                if (timeController.date >= questDate.date)
                 {
-                    StartQuest(questDate.quest);
-                    Debug.Log("Starting quest " + questDate.quest.QuestName + " at date " + timeController.date + "");
+                    Debug.Log("Starting quest " + questDate.QuestName + " at date " + timeController.date + "");
+                    StartQuest(questDate);
                 }
             }
             
-            foreach (PhaseDate phaseDate in Phases)
+            foreach (PhaseAndDate phaseDate in Phases)
             {
-                if (phaseDate.date == timeController.date)
+                if (timeController.date >= phaseDate.date)
                 {
-                    StartPhase(phaseDate.phase);
                     Debug.Log("Starting phase " + phaseDate.phase.name + " at date " + timeController.date + "");
+                    StartPhase(phaseDate.phase);
                 }
             }
         }
 
-        private void StartQuest(Quest questDateQuest)
+        private void StartQuest(Quest quest)
         {
-            StartPhase(questDateQuest.Phases[0]);
+            if (quest.Phases.IsNullOrEmpty())
+            {
+                Debug.Log($"Quest {quest.name} has no phases!");
+            }
+            if (quest.Phases[0].isBlocked)
+            {
+                Debug.Log($"Quest {quest.name} is blocked. Not starting it.");
+            }
+            StartPhase(quest.Phases[0]);
         }
         
         private void StartPhase(QuestPhase questPhase)
         {
+            if (questPhase.isBlocked)
+            {
+                Debug.Log($"QuestPhase {questPhase.name} is blocked. Not starting it.");
+            }
             _dialogueQueueController.AddDialogue(questPhase.PhaseDialogue, questPhase);
         }
 
@@ -82,16 +95,21 @@ namespace Director
                 return;
             }
             
+            CheckIfThereIsNextPhase(questPhase, nextPhase);
+        }
+
+        private void CheckIfThereIsNextPhase(QuestPhase questPhase, QuestPhase nextPhase)
+        {
             if (questPhase.NextPhaseTime != 0)
             {
-                PhaseDate phaseDate = new PhaseDate
+                PhaseAndDate phaseAndDate = new PhaseAndDate
                 {
                     date = _timeController.date + questPhase.NextPhaseTime,
                     phase = nextPhase
                 };
-                
-                Phases.Add(phaseDate);
-                Debug.Log("Phase " + nextPhase.name + " will start at date " + phaseDate.date + "");
+
+                Phases.Add(phaseAndDate);
+                Debug.Log("Phase " + nextPhase.name + " will start at date " + phaseAndDate.date + "");
             }
             else
             {
@@ -102,11 +120,14 @@ namespace Director
         private static QuestPhase FindNextPhase(QuestPhase questPhase, Quest quest)
         {
             QuestPhase nextPhase = null;
-            foreach (QuestPhase phase in quest.Phases)
+
+            for (int index = 0; index < quest.Phases.Count; index++)
             {
-                if (questPhase == phase)
+                QuestPhase phase = quest.Phases[index];
+                
+                if (questPhase == phase && index+1 < quest.Phases.Count)
                 {
-                    nextPhase = phase;
+                    nextPhase = quest.Phases[index+1];
                     break;
                 }
             }
@@ -117,14 +138,14 @@ namespace Director
 
 
     [Serializable]
-    public class QuestDate
+    public class QuestAndDate
     {
         public int date;
         public Quest quest;
     }
     
     [Serializable]
-    public class PhaseDate
+    public class PhaseAndDate
     {
         public int date;
         public QuestPhase phase;

@@ -37,6 +37,7 @@ namespace Inventory
         {
             return _inventoryItem.TargetItem;
         }
+        
 
         public void SnapBack(InventoryItem item)
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Novel;
 using UnityEngine;
 
@@ -26,7 +27,11 @@ namespace Director
                 }
             }
         }
-        
+
+        private void Start()
+        {
+            BlockedPhases.ForEach(phase => phase.isBlocked = true);
+        }
 
         private void UnblockPhases() => BlockedPhases.ForEach(phase => phase.isBlocked = false);
     }

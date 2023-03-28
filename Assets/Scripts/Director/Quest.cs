@@ -7,6 +7,8 @@ namespace Director
     {
         public string QuestName;
         public string QuestDescription;
+
+        public int date;
         
         public bool IsCompleted;
         public bool IsStarted;

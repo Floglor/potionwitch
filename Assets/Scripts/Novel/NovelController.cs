@@ -60,6 +60,11 @@ namespace Novel
 
         public void StartDialogue(Dialogue dialogue)
         {
+            if (dialogue is null)
+            {
+                Debug.Log("Dialogue is null");
+                return;
+            }
             Debug.Log(dialogue.name);
             _isPaused = false;
             CurrentDialogue = dialogue;
@@ -168,6 +173,7 @@ namespace Novel
                     UnpauseInteractions();
                     AdvanceDialogue();
                     ClosePotionRequest();
+                    _potionSlot.ClearItem();
                 }
             });
             
