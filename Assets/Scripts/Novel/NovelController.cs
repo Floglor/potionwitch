@@ -236,6 +236,7 @@ namespace Novel
             ClearText();
             Debug.Log("end dialogue");
             OnEndDialogue?.Invoke();
+            _currentDialogue = null;
         }
 
         private void ClearText()

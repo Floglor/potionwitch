@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Novel;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Director
@@ -18,6 +19,7 @@ namespace Director
 
     public class DialogueQueueController : MonoBehaviour
     {
+        [ShowInInspector]
         private Queue<PhaseDialogue> _dialogueQueue;
         private NovelController _novelController;
 
@@ -32,7 +34,11 @@ namespace Director
         {
             Debug.Log($"Adding dialogue {dialogue.name}");
             _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
+            
+        }
 
+        public void AdvanceQueue()
+        {
             _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);
         }
 

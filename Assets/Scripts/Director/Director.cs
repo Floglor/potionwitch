@@ -33,19 +33,21 @@ namespace Director
         {
             foreach (Quest questDate in Quests)
             {
-                if (timeController.date >= questDate.date)
+                if (timeController.date >= questDate.date && !questDate.IsStarted)
                 {
                     Debug.Log("Starting quest " + questDate.QuestName + " at date " + timeController.date + "");
                     StartQuest(questDate);
                 }
             }
-            
-            foreach (PhaseAndDate phaseDate in Phases)
+
+            for (int index = 0; index < Phases.Count; index++)
             {
+                PhaseAndDate phaseDate = Phases[index];
                 if (timeController.date >= phaseDate.date)
                 {
                     Debug.Log("Starting phase " + phaseDate.phase.name + " at date " + timeController.date + "");
                     StartPhase(phaseDate.phase);
+                    Phases.Remove(phaseDate);
                 }
             }
         }
@@ -55,11 +57,15 @@ namespace Director
             if (quest.Phases.IsNullOrEmpty())
             {
                 Debug.Log($"Quest {quest.name} has no phases!");
+                return;
             }
             if (quest.Phases[0].isBlocked)
             {
                 Debug.Log($"Quest {quest.name} is blocked. Not starting it.");
+                return;
             }
+            
+            quest.IsStarted = true;
             StartPhase(quest.Phases[0]);
         }
         
@@ -68,6 +74,7 @@ namespace Director
             if (questPhase.isBlocked)
             {
                 Debug.Log($"QuestPhase {questPhase.name} is blocked. Not starting it.");
+                return;
             }
             _dialogueQueueController.AddDialogue(questPhase.PhaseDialogue, questPhase);
         }
@@ -77,6 +84,7 @@ namespace Director
             quest.IsCompleted = true;
             CompletedQuests.Add(quest);
             Debug.Log("Quest " + quest.QuestName + " completed");
+            Quests.Remove(quest);
         }
         
         public void EndPhase(QuestPhase questPhase, Quest quest)
@@ -100,6 +108,7 @@ namespace Director
 
         private void CheckIfThereIsNextPhase(QuestPhase questPhase, QuestPhase nextPhase)
         {
+            if (nextPhase == null) return;
             if (questPhase.NextPhaseTime != 0)
             {
                 PhaseAndDate phaseAndDate = new PhaseAndDate
