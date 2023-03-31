@@ -84,6 +84,10 @@ namespace Director
             quest.IsCompleted = true;
             CompletedQuests.Add(quest);
             Debug.Log("Quest " + quest.QuestName + " completed");
+            
+            if (quest.Reward != null)
+                quest.Reward.TriggerBehaviour();
+            
             Quests.Remove(quest);
         }
         

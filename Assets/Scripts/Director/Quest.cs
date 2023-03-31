@@ -14,5 +14,6 @@ namespace Director
         public bool IsStarted;
         
         public List<QuestPhase> Phases;
+        public QuestCompletion Reward;
     }
 }
