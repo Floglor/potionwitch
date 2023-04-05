@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.15.18/Editor/PlasticSCM/Views/Changesets/LaunchDiffOperations.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Assertions/AllocatingGCMemoryConstraint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/SwitchPlatformSetup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/d2/607d3746/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.common@7.0.0/Path/Editor/IMGUI/IDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.15.18/Editor/PlasticSCM/Configuration/CloudEdition/Welcome/OrganizationPanel.cs" root0="SKIP_HIGHLIGHTING" />
@@ -87,13 +88,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Director/DialogueQueueController.cs</url>
-          <line>50</line>
+          <line>52</line>
           <properties documentPath="E:\potionwitch\Assets\Scripts\Director\DialogueQueueController.cs" initialLine="50" containingFunctionPresentation="method 'EndDialogue'">
             <startOffsets>
-              <option value="1337" />
+              <option value="1401" />
             </startOffsets>
             <endOffsets>
-              <option value="1338" />
+              <option value="1402" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
@@ -110,6 +111,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs</url>
+          <line>146</line>
+          <properties documentPath="E:\potionwitch\Assets\Scripts\Inventory\Inventory.cs" initialLine="145" containingFunctionPresentation="method 'DestroyItem'">
+            <startOffsets>
+              <option value="4443" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4492" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

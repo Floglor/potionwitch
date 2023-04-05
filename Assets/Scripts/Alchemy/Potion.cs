@@ -34,7 +34,12 @@ namespace Alchemy
          {
              return _name;
          }
-         
+
+         public int GetPrice()
+         {
+             return 0;
+         }
+
          public int GetEffectId()
          {
              return _effectId;

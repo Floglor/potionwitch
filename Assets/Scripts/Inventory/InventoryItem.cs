@@ -17,8 +17,12 @@ namespace Inventory
         private CanvasGroup _canvasGroup;
         private Transform _originalParentTransform;
 
+        public bool NotOwned;
+
         [HideInInspector]
         public bool IsHeld;
+
+        public bool isDraggable;
 
         private void Start()
         {
@@ -55,6 +59,8 @@ namespace Inventory
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (!isDraggable) return;
+            
             IsHeld = false;
             _originalParentTransform = transform.parent;
             Debug.Log("OnBeginDrag");
@@ -64,6 +70,8 @@ namespace Inventory
 
         public void OnEndDrag(PointerEventData eventData)
         {
+            if (!isDraggable) return;
+            
             Debug.Log("OnEndDrag");
             _canvasGroup.blocksRaycasts = true;
             ISnapBack snapTarget = _originalParentTransform.gameObject.GetComponent<ISnapBack>();
@@ -76,6 +84,9 @@ namespace Inventory
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (!isDraggable)
+                return;
+            
             FollowMouse();
         }
 

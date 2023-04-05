@@ -6,5 +6,7 @@ namespace Inventory
     {
             Sprite GetIcon();
             string GetName();
+
+            int GetPrice();
     }
 }

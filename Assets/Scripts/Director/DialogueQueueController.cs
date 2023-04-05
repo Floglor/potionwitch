@@ -39,6 +39,8 @@ namespace Director
 
         public void AdvanceQueue()
         {
+            if (_dialogueQueue.Count == 0) return;
+            
             _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);
         }
 
