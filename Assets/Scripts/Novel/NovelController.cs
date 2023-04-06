@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Alchemy;
 using Inventory;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,13 +30,44 @@ namespace Novel
 
         private bool _isPaused;
         private Dialogue _currentDialogue;
-        private int _currentDialogueIndex;
 
+        [OnValueChanged("OnValueChanged")]
+        public Dialogue CurrentDialogue
+        {
+            get => _currentDialogue;
+            set => _currentDialogue = value;
+        }
+
+        private int _currentDialogueIndex;
+        
+        //OnEndDialogue event
+        public event System.Action OnEndDialogue;
+
+        private void OnValueChanged()
+        {
+            Debug.Log("OnValueChanged");
+        }
+
+        public void ResetCurrentDialogue()
+        {
+            if (CurrentDialogue != null)
+            {
+                StartDialogue(CurrentDialogue);
+            }
+            
+            ClosePotionRequest();
+        }
 
         public void StartDialogue(Dialogue dialogue)
         {
+            if (dialogue is null)
+            {
+                Debug.Log("Dialogue is null");
+                return;
+            }
+            Debug.Log(dialogue.name);
             _isPaused = false;
-            _currentDialogue = dialogue;
+            CurrentDialogue = dialogue;
             _currentDialogueIndex = 0;
 
             UpdateTextAndSprite();
@@ -43,7 +75,7 @@ namespace Novel
 
         private void UpdateTextAndSprite()
         {
-            Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
+            Line currentLine = CurrentDialogue.Lines[_currentDialogueIndex];
 
             SetNovelText(currentLine.Text,
                 currentLine.TargetCharacter != null
@@ -55,12 +87,13 @@ namespace Novel
                 : "Witch");
 
 
-            SetCharacterSprite(_currentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
-                _currentDialogue.Lines[_currentDialogueIndex].Position);
+            SetCharacterSprite(CurrentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
+                CurrentDialogue.Lines[_currentDialogueIndex].Position);
         }
 
         public void AdvanceDialogue()
         {
+            
             if (_isPaused)
             {
                 return;
@@ -68,14 +101,20 @@ namespace Novel
 
             _currentDialogueIndex++;
 
-            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
+            if (CurrentDialogue == null)
+            {
+                Debug.Log("No dialogue to advance");
+                return;
+            }
+            
+            if (_currentDialogueIndex >= CurrentDialogue.Lines.Count)
             {
                 EndDialogue();
                 return;
             }
 
 
-            Line currentLine = _currentDialogue.Lines[_currentDialogueIndex];
+            Line currentLine = CurrentDialogue.Lines[_currentDialogueIndex];
 
             if (currentLine.ChangeUsedSprite)
             {
@@ -87,7 +126,7 @@ namespace Novel
                 SetCharacterSprite(currentLine.ChangeSpriteTo, currentLine.UsedSpritePosition);
             }
 
-            if (_currentDialogueIndex >= _currentDialogue.Lines.Count)
+            if (_currentDialogueIndex >= CurrentDialogue.Lines.Count)
             {
                 EndDialogue();
                 return;
@@ -134,6 +173,7 @@ namespace Novel
                     UnpauseInteractions();
                     AdvanceDialogue();
                     ClosePotionRequest();
+                    _potionSlot.ClearItem();
                 }
             });
             
@@ -195,6 +235,8 @@ namespace Novel
             PauseInteractions();
             ClearText();
             Debug.Log("end dialogue");
+            OnEndDialogue?.Invoke();
+            _currentDialogue = null;
         }
 
         private void ClearText()

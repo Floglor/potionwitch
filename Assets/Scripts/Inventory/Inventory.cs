@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Alchemy;
 using Garden;
 using Misc;
@@ -8,24 +9,23 @@ using UnityEngine.UI;
 
 namespace Inventory
 {
-    public class Inventory : MonoBehaviour, IDropHandler
+    public class Inventory : MonoBehaviour, IDropHandler, ISnapBack, IReceiveItems
     {
         public List<IItem> items = new List<IItem>();
         [SerializeField] private Cauldron _cauldron;
         [SerializeField] private GameObject _itemPrefab;
         [SerializeField] private Transform _contentTransform;
-
+        [SerializeField] private DropArea _dropArea;
+        
         public List<InventoryItem> _inventoryItemsUI = new List<InventoryItem>();
 
-        [HideInInspector] public InventorySlot _requestedSlot;
-        
         public GardenPlot SelectedGardenPlot;
+        
 
-        public void RequestItemInSlot(InventorySlot slot)
+        private void Start()
         {
-            _requestedSlot = slot;
+            _dropArea._dropTarget = this;
         }
-
 
         public void ItemOnClick(IItem item)
         {
@@ -61,6 +61,7 @@ namespace Inventory
 
             InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
             inventoryItem.SetItem(item);
+            inventoryItem.isDraggable = true;
 
             inventoryItem.RemoveItemEvent += RemoveItem;
 
@@ -72,6 +73,16 @@ namespace Inventory
         public void AddItem(InventoryItem itemObject)
         {
             itemObject.transform.SetParent(_contentTransform);
+            
+            InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
+            _inventoryItemsUI.Add(inventoryItem);
+            inventoryItem.isDraggable = true;
+
+            inventoryItem.RemoveItemEvent += RemoveItem;
+
+            Button itemButton = itemObject.GetComponent<Button>();
+
+            itemButton.onClick.AddListener(() => ItemOnClick(inventoryItem.TargetItem));
         }
 
         public void SelectGardenPlot(GardenPlot gardenPlot)
@@ -157,13 +168,19 @@ namespace Inventory
                 return;
             }
 
-            if (droppedItem.GetComponent<InventoryItem>() != null) 
+            InventoryItem item = droppedItem.GetComponent<InventoryItem>();
+
+            if (item != null && !item.NotOwned) 
             {
-                AddItem(droppedItem.GetComponent<InventoryItem>());
+                AddItem(item);
+                item.IsHeld = true;
             }
             
         }
 
-        
+        public void SnapBack(InventoryItem item)
+        {
+            item.transform.SetParent(transform);
+        }
     }
 }
