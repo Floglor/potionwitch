@@ -102,8 +102,8 @@ MonoBehaviour:
   IsPlanted: 0
   IsSelected: 0
   SpriteRenderer: {fileID: 0}
-  OriginalSprite: {fileID: 21300000, guid: 6157b28c21b41044684d7ddfadff2ca9, type: 3}
-  PlantedSprite: {fileID: 1496933875, guid: f8277c11589d8154d8f95115147650ac, type: 3}
+  OriginalSprite: {fileID: -1182006601, guid: 87fb1ac951fbc9643a6cf63524f52119, type: 3}
+  PlantedSprite: {fileID: 70937820, guid: 87fb1ac951fbc9643a6cf63524f52119, type: 3}
   _genericColor: {r: 1, g: 1, b: 1, a: 1}
   _selectedColor: {r: 1, g: 1, b: 0, a: 1}
   _unboughtColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0.5686275}
