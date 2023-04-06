@@ -10,6 +10,7 @@ namespace Alchemy
           public MoveSet MoveSet;
           public Sprite Icon;
           public string Name;
+          public int Price;
           public Sprite GetIcon()
           {
                return Icon;
@@ -18,6 +19,11 @@ namespace Alchemy
           public string GetName()
           {
                return Name;
+          }
+
+          public int GetPrice()
+          {
+               return Price;
           }
      }
 }

@@ -12,6 +12,8 @@ namespace Garden
 
         [SerializeField] private float _growthTime;
         [SerializeField] private float _growthSpeed;
+        [SerializeField] private int _price;
+        
 
         public Sprite Icon;
         public string Name;
@@ -37,6 +39,11 @@ namespace Garden
         public string GetName()
         {
             return Name;
+        }
+
+        public int GetPrice()
+        {
+            return _price;
         }
     }
 }

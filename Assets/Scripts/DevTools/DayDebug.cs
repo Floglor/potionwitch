@@ -1,5 +1,4 @@
-﻿using System;
-using Misc;
+﻿using Misc;
 using TMPro;
 using UnityEngine;
 
