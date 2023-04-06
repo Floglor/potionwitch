@@ -10,7 +10,7 @@ namespace Garden
         //private int _quality;
         [SerializeField] private Ingredient _futureIngredient;
 
-        [SerializeField] private float _growthTime;
+        public int GrowthDays;
         [SerializeField] private float _growthSpeed;
         [SerializeField] private int _price;
         

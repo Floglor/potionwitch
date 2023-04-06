@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SeedUpIngredient
   m_EditorClassIdentifier: 
   _futureIngredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
-  _growthTime: 0
+  GrowthDays: 2
   _growthSpeed: 0
   _price: 20
   Icon: {fileID: 1831078158, guid: f8277c11589d8154d8f95115147650ac, type: 3}
