@@ -106,9 +106,9 @@ namespace UI
     [Serializable]
     public class ScreenPage
     {
-        public string Name;
         public List<GameObject> ActivatedObjects;
         public int Index;
+        public string Name;
     }
 
     public enum ScreenMove

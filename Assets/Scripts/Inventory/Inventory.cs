@@ -182,5 +182,10 @@ namespace Inventory
         {
             item.transform.SetParent(transform);
         }
+
+        public void LoseItem(InventoryItem item)
+        {
+            _inventoryItemsUI.Remove(item);
+        }
     }
 }

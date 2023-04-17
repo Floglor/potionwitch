@@ -796,24 +796,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559886604}
   m_CullTransparentMesh: 0
+--- !u!1 &635249983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635249985}
+  - component: {fileID: 635249984}
+  m_Layer: 0
+  m_Name: CheatMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &635249984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635249983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b413c916464cfdb451270a5c562c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cauldron: {fileID: 0}
+  _inventory: {fileID: 1959681959}
+  _ingredient: {fileID: 11400000, guid: addbb83845f972c40a741f805b61aca6, type: 2}
+  _seed: {fileID: 11400000, guid: 3022dfbbe56d8a849825120f7a4b48a1, type: 2}
+  _potionEffect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
+--- !u!4 &635249985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635249983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 704.0422, y: 363.39038, z: 7.0658045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698885540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8606114062876428371, guid: d51d6ab682246d944881fa4a09ddc1b9,
     type: 3}
   m_PrefabInstance: {fileID: 1985132068}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &698885541 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8606114062876428366, guid: d51d6ab682246d944881fa4a09ddc1b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1985132068}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698885540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1ef72249701d147b3931f6cfdd27fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &698885542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,7 +864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cauldron: {fileID: 861655187}
-  _inventory: {fileID: 698885541}
+  _inventory: {fileID: 0}
   _ingredient: {fileID: 11400000, guid: 2aa31cec7502a7648a34511f462d3fd8, type: 2}
   _seed: {fileID: 0}
   _potionEffect: {fileID: 11400000, guid: bb4ac76b79a561f46be2353809e734cb, type: 2}
@@ -929,7 +966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UsedSelector: {fileID: 0}
   UsedIngredients: []
-  _inventory: {fileID: 698885541}
+  _inventory: {fileID: 0}
 --- !u!4 &861655188
 Transform:
   m_ObjectHideFlags: 0
@@ -2217,7 +2254,7 @@ GameObject:
   - component: {fileID: 1881479492}
   - component: {fileID: 1881479494}
   m_Layer: 5
-  m_Name: Image
+  m_Name: InventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2497,6 +2534,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927541226}
   m_CullTransparentMesh: 0
+--- !u!114 &1959681959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 51658425, guid: d51d6ab682246d944881fa4a09ddc1b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1985132068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1ef72249701d147b3931f6cfdd27fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1985132068
 PrefabInstance:
   m_ObjectHideFlags: 0

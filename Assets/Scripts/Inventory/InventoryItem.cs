@@ -66,6 +66,8 @@ namespace Inventory
             Debug.Log("OnBeginDrag");
             _canvasGroup.blocksRaycasts = false;
             transform.SetParent(_canvas.transform);
+            ISnapBack snapTarget = _originalParentTransform.gameObject.GetComponent<ISnapBack>();
+            snapTarget?.LoseItem(this);
         }
 
         public void OnEndDrag(PointerEventData eventData)

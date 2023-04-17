@@ -5,11 +5,17 @@ namespace Inventory
 {
     public class InventorySlot : MonoBehaviour, IDropHandler, ISnapBack
     {
-        private InventoryItem _inventoryItem;
+        public InventoryItem _inventoryItem;
 
         public void OnDrop(PointerEventData eventData)
         {
             Debug.Log("OnDrop");
+
+            if (_inventoryItem != null)
+            {
+                return;
+            }
+
             GameObject droppedItem = eventData.pointerDrag;
             
             droppedItem.transform.parent = transform;
@@ -23,10 +29,11 @@ namespace Inventory
             _inventoryItem.IsHeld = true;
             
             droppedItem.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            droppedItem.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
-            droppedItem.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
+            droppedItem.GetComponent<RectTransform>().anchorMin = GetComponent<RectTransform>().anchorMin;
+            droppedItem.GetComponent<RectTransform>().anchorMax = GetComponent<RectTransform>().anchorMax;
+            droppedItem.transform.position  = transform.position;
         }
-        
+
         public void ClearItem()
         {
             Destroy(_inventoryItem.gameObject);
@@ -47,8 +54,14 @@ namespace Inventory
             _inventoryItem.IsHeld = true;
             
             droppedItem.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            droppedItem.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
-            droppedItem.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
+            droppedItem.GetComponent<RectTransform>().anchorMin = GetComponent<RectTransform>().anchorMin;
+            droppedItem.GetComponent<RectTransform>().anchorMax = GetComponent<RectTransform>().anchorMax;
+            droppedItem.transform.position = transform.position;
+        }
+
+        public void LoseItem(InventoryItem item)
+        {
+            _inventoryItem=null;
         }
     }
 }
