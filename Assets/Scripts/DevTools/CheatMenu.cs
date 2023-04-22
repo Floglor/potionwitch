@@ -25,7 +25,7 @@ namespace DevTools
         private void AddPotion()
         {
             if (_potionEffect is null) return;
-            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect));
+            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect, 1f));
         }
 
         [Button("Add Seed")]
