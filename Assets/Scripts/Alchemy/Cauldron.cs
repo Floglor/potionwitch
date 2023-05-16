@@ -81,7 +81,13 @@ namespace Alchemy
         public void OnDrop(PointerEventData eventData)
         {
             Debug.Log("Cauldron OnDrop");
-            IItem item = eventData.pointerDrag.GetComponent<InventoryItem>().TargetItem;
+            
+            if (eventData.pointerDrag.GetComponent<InventoryItem>() == null) return;
+            
+            IItem item = eventData.
+                pointerDrag.
+                GetComponent<InventoryItem>()
+                .TargetItem;
 
             if (item is Ingredient ingredient)
             {

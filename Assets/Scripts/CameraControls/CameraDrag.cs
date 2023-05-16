@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace CameraControls
 {
-    public class CameraDrag : MonoBehaviour, IDragHandler
+    public class CameraDrag : MonoBehaviour, IPointerDownHandler, IPointerClickHandler
     {
 
         [SerializeField] private BoxCollider2D _dragArea;
@@ -13,13 +13,8 @@ namespace CameraControls
         private Vector3 _dragOrigin;
 
         private Camera _mainCamera;
-
+        private bool _isDragging;
         
-        private void OnMouseDrag()
-        {
-            Debug.Log("OnMouseDrag");
-            MoveCamera();
-        }
 
         private void Start()
         {
@@ -28,11 +23,10 @@ namespace CameraControls
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                _dragOrigin = Input.mousePosition;
-                return;
-            }
+           if (_isDragging && Input.GetMouseButton(0))
+           {
+               MoveCamera();
+           }
         }
 
         private void MoveCamera()
@@ -46,6 +40,19 @@ namespace CameraControls
         public void OnDrag(PointerEventData eventData)
         {
             MoveCamera();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            _isDragging = true;
+            Debug.Log("TELOR DETECTED");
+            _dragOrigin = Input.mousePosition;
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            _isDragging = false;
+            Debug.Log("BECAMO DETECTED");
         }
     }
 }
