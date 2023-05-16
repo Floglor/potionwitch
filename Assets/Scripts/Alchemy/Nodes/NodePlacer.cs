@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CustomExtensions;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Alchemy.Nodes
 {
@@ -14,6 +17,70 @@ namespace Alchemy.Nodes
         [SerializeField] private int _testNodeRadius;
         [SerializeField] private int _spacing;
         [SerializeField] private List<Sprite> _starSprites;
+        [SerializeField] private NodePainter _nodePainter;
+        [SerializeField] private Selector _selector;
+        
+        
+        public Stone Stone;
+
+        private void Awake()
+        {
+            _nodePainter = FindObjectOfType<NodePainter>();
+            _selector = FindObjectOfType<Selector>();
+        }
+
+        [Button]
+        private void SaveToStone()
+        {
+            if (Stone == null) return;
+
+            Stone.Nodes = new List<AlchemyNode>();
+
+            foreach (AlchemyNode alchemyNode in _nodesHolder._nodes)
+            {
+                Stone.Nodes.Add(Instantiate(alchemyNode.gameObject, Stone.transform)
+                    .GetComponent<AlchemyNode>());
+            }
+
+            GameObject stone = Stone.gameObject;
+
+            SaveObject(stone);
+
+
+            DestroyImmediate(Stone.gameObject);
+            //node.gameObject.SetActive(false);
+        }
+
+
+        private void SaveObject(GameObject stone)
+        {
+            GameObject prefab = PrefabUtility.SaveAsPrefabAsset(stone, "Assets/" + stone.name + ".prefab");
+
+            if (prefab != null)
+            {
+                Debug.Log("Prefab saved: " + prefab.name);
+            }
+            else
+            {
+                Debug.LogError("Failed to save prefab.");
+            }
+        }
+
+        [Button]
+        public void LoadFromStone()
+        {
+            DeleteTestNodes();
+            foreach (AlchemyNode alchemyNode in Stone.Nodes)
+            {
+                GameObject node = Instantiate(alchemyNode.gameObject, transform);
+                _nodesHolder.AddNode(node.GetComponent<AlchemyNode>());
+            }
+            
+
+            _nodePainter.ResetAllNodeColors();
+            _selector.Initialize();
+
+        }
 
         [Button("Randomize Nodes Sprites"), GUIColor(0, 1, 1)]
         public void RandomizeNodesSprites()
@@ -41,17 +108,16 @@ namespace Alchemy.Nodes
         public void PlaceTestNodes()
         {
             AlchemyNode lastNode = null;
-        
+
             for (int x = -_testNodeRadius; x <= _testNodeRadius; x++)
             {
                 for (int y = -_testNodeRadius; y <= _testNodeRadius; y++)
                 {
                     _nodesHolder.AddNode(PlaceNodeWithSpacing(x, y, ref lastNode));
-                
                 }
             }
         }
-    
+
         [Button("Delete test nodes"), GUIColor(1, 0, 0)]
         public void DeleteTestNodes()
         {
@@ -63,7 +129,7 @@ namespace Alchemy.Nodes
         {
             AlchemyNode node = Instantiate(_testNode, new Vector3(x * _spacing, y * _spacing, 0),
                 Quaternion.identity);
-            
+
             lastNode = node;
             node.transform.SetParent(transform);
             node.X = x;

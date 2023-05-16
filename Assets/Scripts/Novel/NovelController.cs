@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Alchemy;
 using Inventory;
 using Sirenix.OdinInspector;
@@ -42,6 +43,15 @@ namespace Novel
         
         //OnEndDialogue event
         public event System.Action OnEndDialogue;
+
+        private void Awake()
+        {
+            _characterSpriteCenter.gameObject.SetActive(false);
+            _characterSpriteLeft.gameObject.SetActive(false);
+            _characterSpriteRight.gameObject.SetActive(false);
+            novelText.text = "";
+            novelName.text = "";
+        }
 
         private void OnValueChanged()
         {

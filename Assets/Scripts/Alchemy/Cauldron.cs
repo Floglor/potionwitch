@@ -13,10 +13,16 @@ namespace Alchemy
     {
         public Selector UsedSelector;
         public List<Ingredient> UsedIngredients;
+        public CircleGame _circleGame;
+
         [SerializeField] private Inventory.Inventory _inventory;
 
-        public CircleGame _circleGame;
-        
+        private NodePlacer _nodePlacer;
+
+        private void Awake()
+        {
+            _nodePlacer = FindObjectOfType<NodePlacer>();
+        }
 
         public void Brew()
         {
@@ -25,11 +31,12 @@ namespace Alchemy
                 Debug.Log("Can't brew, node is empty");
                 return;
             }
+
             _circleGame.gameObject.SetActive(true);
             _circleGame.transform.parent.gameObject.SetActive(true);
             PotionEffect potionEffect = UsedSelector.CursorNode.GetEffect();
             _circleGame.StartGame(potionEffect.CircleGameSpeed, potionEffect.CircleGameRotation);
-            
+
             _circleGame.IsGameRunning = true;
             _circleGame.OnCompletion = delegate(bool quality) { AddPotion(quality ? 1f : 0f); };
         }
@@ -68,17 +75,24 @@ namespace Alchemy
 
             UsedIngredients.Clear();
             UsedSelector.ReturnCursor();
+            _nodePlacer.DeleteTestNodes();
         }
 
         public void OnDrop(PointerEventData eventData)
         {
             Debug.Log("Cauldron OnDrop");
+            IItem item = eventData.pointerDrag.GetComponent<InventoryItem>().TargetItem;
 
-            if (eventData.pointerDrag.GetComponent<InventoryItem>().TargetItem is Ingredient ingredient)
+            if (item is Ingredient ingredient)
             {
                 Debug.Log("it is an ingredient");
                 AddIngredient(ingredient);
                 _inventory.DestroyItem(ingredient);
+            }
+            else if (item is Stone stone)
+            {
+                _nodePlacer.Stone = stone;
+                _nodePlacer.LoadFromStone();
             }
         }
     }

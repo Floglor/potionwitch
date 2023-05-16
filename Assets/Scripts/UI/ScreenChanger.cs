@@ -15,7 +15,19 @@ namespace UI
         [InfoBox("All indexes must be unique; There should be no numbers missing")] [SerializeField]
         private List<ScreenPage> _screenPages;
 
+        [ShowInInspector]
         private ScreenPage _currentPage;
+
+        [ButtonGroup]
+        private void EditorChangeLeft()
+        {
+            ChangeScreen(ScreenMove.Left);
+        }
+        [ButtonGroup]
+        private void EditorChangeRight()
+        {
+            ChangeScreen(ScreenMove.Right);
+        }
 
         private void Start()
         {
