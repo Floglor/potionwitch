@@ -29,6 +29,12 @@ namespace UI
             ChangeScreen(ScreenMove.Right);
         }
 
+        [Button]
+        private void ResetPageEditor()
+        {
+            _currentPage = FindPage(0);
+        }
+
         private void Start()
         {
             _currentPage = FindPage(0);
