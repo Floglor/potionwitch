@@ -12,6 +12,8 @@ namespace DevTools
         [SerializeField] private Ingredient _ingredient;
         [SerializeField] private GardenSeed _seed;
         [SerializeField] private PotionEffect _potionEffect;
+        [SerializeField] private Stone _stone;
+        
 
         [Button("Add Ingredient")]
         private void AddItem()
@@ -25,7 +27,7 @@ namespace DevTools
         private void AddPotion()
         {
             if (_potionEffect is null) return;
-            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect));
+            _inventory.SpawnItem(_cauldron.ToPotion(_potionEffect, 1f));
         }
 
         [Button("Add Seed")]
@@ -35,11 +37,18 @@ namespace DevTools
             _inventory.SpawnItem(_seed);
         }
 
+        private void AddStone()
+        {
+            if (_stone is null) return;
+            _inventory.SpawnItem(_stone);
+        }
+
         private void Start()
         {
             AddItem();
             AddPotion();
             AddSeed();
+            AddStone();
         }
     }
 }

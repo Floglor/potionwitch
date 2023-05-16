@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Alchemy.Nodes
 {
+    [Serializable]
    public class AlchemyNode : MonoBehaviour
    {
       public int X;

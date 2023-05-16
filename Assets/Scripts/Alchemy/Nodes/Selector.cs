@@ -54,7 +54,7 @@ namespace Alchemy.Nodes
             _positionY += move.Y;
         }
 
-        private void Start()
+        public void Initialize()
         {
             CursorNode = nodesHolder.GetNode(_positionX, _positionY);
             ResetStartNode();

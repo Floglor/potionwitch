@@ -17,4 +17,5 @@ MonoBehaviour:
   PotionSprite: {fileID: 8545568746483760750, guid: 2191ab4b836919446bea8990389d53c1,
     type: 3}
   BaseCost: 0
-  Difficulty: 0
+  CircleGameSpeed: -400
+  CircleGameRotation: 50

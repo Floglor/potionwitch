@@ -10,7 +10,8 @@ namespace Alchemy
         public string EffectDescription;
         public Sprite PotionSprite;
         public int BaseCost;
-        public float Difficulty;
+        public float CircleGameSpeed;
+        public float CircleGameRotation;
 
         [ShowInInspector] private int _effectId;
 

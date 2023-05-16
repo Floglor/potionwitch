@@ -13,7 +13,7 @@ namespace Alchemy.Nodes
 
         public void Awake()
         {
-            ResetAllNodeColors();
+            //ResetAllNodeColors();
         }
 
         public void ResetAllNodeColors()
