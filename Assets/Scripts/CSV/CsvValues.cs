@@ -13,13 +13,13 @@ namespace CSV
         public const string LEFT_NAME = "Left";
         public const string RIGHT_NAME = "Right";
 
-        public static DialoguePosition GetPosition(string PositionName)
+        public static DialoguePosition GetPosition(string positionName)
         {
-            return PositionName switch
+            return positionName switch
             {
-                "Center" => DialoguePosition.Center,
-                "Right" => DialoguePosition.Right,
-                "Left" => DialoguePosition.Left,
+                CENTER_NAME => DialoguePosition.Center,
+                RIGHT_NAME => DialoguePosition.Right,
+                LEFT_NAME => DialoguePosition.Left,
                 _ => DialoguePosition.Center
             };
         }

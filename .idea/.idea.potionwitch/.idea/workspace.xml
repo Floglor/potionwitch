@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.common@7.0.0/Editor/InternalBridge/InternalEditorBridge.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@8.0.0/Samples~/Extras/Scripts/SimpleDraw.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/d8d38b92d94a4ff8a91e61d39c6d19cd15d000/3e/04ee7dd0/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/bf4084aba38542b9b4f04e099871261dda00/90/409ba0ab/CsvParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.15.18/Editor/PlasticSCM/UI/UnityMenuItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@8.0.0/Samples~/Extras/Scripts/GenerateSpriteShapes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRun/TestJobData.cs" root0="SKIP_HIGHLIGHTING" />
@@ -77,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="67556">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="67556" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -138,29 +139,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CSV/CsvDialogue.cs</url>
-          <line>30</line>
+          <line>32</line>
           <properties documentPath="E:\potionwitch\Assets\Scripts\CSV\CsvDialogue.cs" initialLine="30" containingFunctionPresentation="method 'ConvertToLines'">
             <startOffsets>
-              <option value="947" />
+              <option value="974" />
             </startOffsets>
             <endOffsets>
-              <option value="1019" />
+              <option value="1046" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/CSV/CsvParser.cs</url>
-          <line>81</line>
-          <properties documentPath="E:\potionwitch\Assets\Scripts\CSV\CsvParser.cs" initialLine="81" containingFunctionPresentation="method 'LoadFromString'">
-            <startOffsets>
-              <option value="2994" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3024" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

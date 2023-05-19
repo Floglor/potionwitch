@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using Misc;
 using Novel;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using yutokun;
 
 namespace CSV
 {
@@ -13,7 +15,7 @@ namespace CSV
         [Button(ButtonSizes.Large)]
         private void FillUpFromTextAsset()
         {
-            List<List<string>> linesList = CsvParser.LoadFromString(_textAsset.ToString());
+            List<List<string>> linesList = CSVParser.LoadFromString(_textAsset.ToString());
             
             List<Line> lines = ConvertToLines(linesList);
             Lines = lines;
@@ -45,9 +47,9 @@ namespace CSV
             return null;
         }
 
-        private Character FindCharacter(string CharacterName)
+        private Character FindCharacter(string characterName)
         {
-            return null;
+            return CharacterFinder.FindScriptableObjectByName(characterName);
         }
     }
 }

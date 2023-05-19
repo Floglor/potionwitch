@@ -1,15 +1,21 @@
-﻿using System;
+/*
+ * CSV Parser for C#.
+ *
+ * These codes are licensed under CC0.
+ * https://github.com/yutokun/CSV-Parser
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using DefaultNamespace;
 
-namespace CSV
+namespace yutokun
 {
-    public static class CsvParser
+    public static class CSVParser
     {
         /// <summary>
         /// Load CSV data from specified path.
@@ -27,7 +33,7 @@ namespace CSV
                 delimiter = EstimateDelimiter(path);
             }
 
-            string data = File.ReadAllText(path, encoding);
+            var data = File.ReadAllText(path, encoding);
             return Parse(data, delimiter);
         }
 
@@ -47,16 +53,16 @@ namespace CSV
                 delimiter = EstimateDelimiter(path);
             }
 
-            using (StreamReader reader = new StreamReader(path, encoding))
+            using (var reader = new StreamReader(path, encoding))
             {
-                string data = await reader.ReadToEndAsync();
+                var data = await reader.ReadToEndAsync();
                 return Parse(data, delimiter);
             }
         }
 
         static Delimiter EstimateDelimiter(string path)
         {
-            string extension = Path.GetExtension(path);
+            var extension = Path.GetExtension(path);
             if (extension.Equals(".csv", StringComparison.OrdinalIgnoreCase))
             {
                 return Delimiter.Comma;
@@ -86,27 +92,27 @@ namespace CSV
         {
             ConvertToCrlf(ref data);
 
-            List<List<string>> sheet = new List<List<string>>();
-            List<string> row = new List<string>();
-            StringBuilder cell = new StringBuilder();
-            bool insideQuoteCell = false;
-            int start = 0;
+            var sheet = new List<List<string>>();
+            var row = new List<string>();
+            var cell = new StringBuilder();
+            var insideQuoteCell = false;
+            var start = 0;
 
-            ReadOnlySpan<char> delimiterSpan = ((IConvertible) delimiter).ToChar(null).ToString().AsSpan();
-            ReadOnlySpan<char> crlfSpan = "\r\n".AsSpan();
-            ReadOnlySpan<char> oneDoubleQuotSpan = "\"".AsSpan();
-            ReadOnlySpan<char> twoDoubleQuotSpan = "\"\"".AsSpan();
+            var delimiterSpan = delimiter.ToChar().ToString().AsSpan();
+            var crlfSpan = "\r\n".AsSpan();
+            var oneDoubleQuotSpan = "\"".AsSpan();
+            var twoDoubleQuotSpan = "\"\"".AsSpan();
 
             while (start < data.Length)
             {
-                int length = start <= data.Length - 2 ? 2 : 1;
-                ReadOnlySpan<char> span = data.AsSpan(start, length);
+                var length = start <= data.Length - 2 ? 2 : 1;
+                var span = data.AsSpan(start, length);
 
                 if (span.StartsWith(delimiterSpan))
                 {
                     if (insideQuoteCell)
                     {
-                        cell.Append(((IConvertible) delimiter).ToChar(null));
+                        cell.Append(delimiter.ToChar());
                     }
                     else
                     {
