@@ -5,10 +5,11 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using DefaultNamespace;
 
-namespace DefaultNamespace
+namespace CSV
 {
-    public static class CSVParser
+    public static class CsvParser
     {
         /// <summary>
         /// Load CSV data from specified path.

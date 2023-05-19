@@ -38,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestRun/Tasks/RegisterFilesForCleanupVerificationTask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.1/Editor/Actions/IAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/ApplePlatformSetup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/d8d38b92d94a4ff8a91e61d39c6d19cd15d000/86/d8efc0af/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.common@7.0.0/Runtime/InternalBridge/IAnimationPreviewable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/3a/2d118c7b/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,10 +77,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="67556">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="67556" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -134,6 +135,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CSV/CsvDialogue.cs</url>
+          <line>30</line>
+          <properties documentPath="E:\potionwitch\Assets\Scripts\CSV\CsvDialogue.cs" initialLine="30" containingFunctionPresentation="method 'ConvertToLines'">
+            <startOffsets>
+              <option value="947" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1019" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CSV/CsvParser.cs</url>
+          <line>81</line>
+          <properties documentPath="E:\potionwitch\Assets\Scripts\CSV\CsvParser.cs" initialLine="81" containingFunctionPresentation="method 'LoadFromString'">
+            <startOffsets>
+              <option value="2994" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3024" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
