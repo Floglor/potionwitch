@@ -12,5 +12,256 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7084bfe1164725b991047fc06f3dbe, type: 3}
   m_Name: TohsakaCSVTest
   m_EditorClassIdentifier: 
-  Lines: []
-  _textAsset: {fileID: 0}
+  Lines:
+  - Text: This is the second test dialogue.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: To think of it, we have zero valid dialogues right now.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: None.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Null.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: We came this far and there is absolutely no content in the game right now?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: What is the game, even?
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: I'm not sure.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Anyway, I should explain CSV document limitations
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: In the game editor, you can manipulate sprites.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: By manipulating, I mean deleting and moving.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Floggy thought that this ability should stay in the editor, as well as
+      other things.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Like choices and different dialogue paths.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: So, CSV is only limited to making a single dialogue. The main work is still
+      done in the editor.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: He is so lazy, I just can't get over that.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Well, his excuse was that this type of dialogue making would be too hard
+      to comprehend otherwise.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: You still can choose the Sprite from the Sprites table.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: By default, the game will set the sprite at the chosen position.
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Still, it is powerful, since allows to write dialogues outside of the game
+      with no copypaste work
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  - Text: Enjoy!
+    TargetCharacter: {fileID: 11400000, guid: faec92c00b6f09545a58d5dd4b0040b5, type: 2}
+    CharacterSprite: {fileID: 0}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+  _textAsset: {fileID: 4900000, guid: 2fe5f7c0d078e25488da9f2732db2081, type: 3}
