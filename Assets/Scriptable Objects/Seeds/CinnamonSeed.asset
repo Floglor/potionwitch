@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56ff1b7345c5014cb6cece5ddef1b84, type: 3}
+  m_Name: CinnamonSeed
+  m_EditorClassIdentifier: 
+  _futureIngredient: {fileID: 11400000, guid: 89dea97fa064d0c409bf52989d9c3345, type: 2}
+  GrowthDays: 2
+  _growthSpeed: 0
+  _price: 5
+  Icon: {fileID: 0}
+  Name: Cinnamon Seed
+  GrowingSprite: {fileID: 0}
+  RipeSprite: {fileID: 0}

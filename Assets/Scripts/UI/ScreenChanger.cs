@@ -32,12 +32,12 @@ namespace UI
         [Button]
         private void ResetPageEditor()
         {
-            _currentPage = FindPage(0);
+            _currentPage = FindPage(-1);
         }
 
         private void Start()
         {
-            _currentPage = FindPage(0);
+            _currentPage = FindPage(-1);
             _leftButton.onClick.AddListener(() => ChangeScreen(ScreenMove.Left));
             _rightButton.onClick.AddListener(() => ChangeScreen(ScreenMove.Right));
         }
