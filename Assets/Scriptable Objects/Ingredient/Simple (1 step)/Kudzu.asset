@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b39a797f230b540bd4b822e37f87df, type: 3}
+  m_Name: Kudzu
+  m_EditorClassIdentifier: 
+  MoveSet:
+    moves:
+    - X: -1
+      Y: 0
+  Icon: {fileID: 4465556666720371842, guid: 2191ab4b836919446bea8990389d53c1, type: 3}
+  Name: Kudzu
+  Price: 10

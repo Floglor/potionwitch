@@ -1,6 +1,7 @@
 using UnityEngine;
 using Alchemy;
 using Inventory;
+using Sirenix.OdinInspector;
 
 namespace Garden
 {
@@ -8,7 +9,7 @@ namespace Garden
     public class GardenSeed : ScriptableObject, IItem
     {
         //private int _quality;
-        [SerializeField] private Ingredient _futureIngredient;
+        [SerializeField] public Ingredient _futureIngredient;
 
         public int GrowthDays;
         [SerializeField] private float _growthSpeed;
@@ -20,6 +21,12 @@ namespace Garden
 
         public Sprite GrowingSprite;
         public Sprite RipeSprite;
+
+        [DisableInPlayMode]
+        public void EditorSetIngredient(Ingredient ingredient)
+        {
+            _futureIngredient = ingredient;
+        }
 
         public void PlantSeed(GardenPlot gardenPlot)
         {

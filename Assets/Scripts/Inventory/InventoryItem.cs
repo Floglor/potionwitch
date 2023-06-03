@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -98,5 +99,6 @@ namespace Inventory
             mousePosition.z = 10;
             transform.position = Input.mousePosition * _canvas.scaleFactor;
         }
+        
     }
 }

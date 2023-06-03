@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56ff1b7345c5014cb6cece5ddef1b84, type: 3}
+  m_Name: BlueberrySeed
+  m_EditorClassIdentifier: 
+  _futureIngredient: {fileID: 11400000, guid: 29442ab244bf6ce42b9668bee0a4ae1b, type: 2}
+  GrowthDays: 2
+  _growthSpeed: 0
+  _price: 2
+  Icon: {fileID: -1342080585, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  Name: Blueberry Seed
+  GrowingSprite: {fileID: 506520166, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  RipeSprite: {fileID: 597864713, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
