@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Novel;
+using QFSW.QC;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -37,6 +38,7 @@ namespace Director
             
         }
 
+        [Command("AdvanceDialogue")]
         public void AdvanceQueue()
         {
             if (_dialogueQueue.Count == 0) return;

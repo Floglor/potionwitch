@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Novel;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,9 +36,17 @@ namespace UI
             _currentPage = FindPage(-1);
         }
 
+        private void ToggleArrowButtons(bool isDialogueRunning)
+        {
+            
+            _leftButton.interactable = !isDialogueRunning;
+            _rightButton.interactable = !isDialogueRunning;
+        }
+
         private void Start()
         {
             _currentPage = FindPage(-1);
+            FindObjectOfType<NovelController>().IsPausedChanged += ToggleArrowButtons;
             _leftButton.onClick.AddListener(() => ChangeScreen(ScreenMove.Left));
             _rightButton.onClick.AddListener(() => ChangeScreen(ScreenMove.Right));
         }

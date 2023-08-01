@@ -15,6 +15,7 @@ namespace Novel
         private void Awake()
         {
             _historyLog = new List<HistoryLog>();
+            gameObject.SetActive(false);
         }
 
         public void ToggleHistory()

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Director;
 using Sirenix.OdinInspector;
 using UnityEngine;

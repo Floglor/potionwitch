@@ -24,13 +24,13 @@ namespace Novel
         [SerializeField] private NovelHistory _novelHistory;
         [SerializeField] private InventorySlot _potionSlot;
         [SerializeField] private Button _potionSlotButton;
-        
+
         public event System.Action OnPauseInteractions;
         public event System.Action OnResumeInteractions;
 
 
-        private bool _isPaused;
         private Dialogue _currentDialogue;
+
 
         [OnValueChanged("OnValueChanged")]
         public Dialogue CurrentDialogue
@@ -39,8 +39,32 @@ namespace Novel
             set => _currentDialogue = value;
         }
 
+        private bool _isDialogueRunning;
+
+        private bool _isPaused;
+        public bool IsDialogueRunning
+        {
+            get => _isDialogueRunning;
+            
+            private set
+            {
+                if (_isDialogueRunning != value)
+                {
+                    _isDialogueRunning = value;
+                    OnIsPausedChanged(value); 
+                }
+            }
+        }
+
+        public virtual void OnIsPausedChanged(bool newValue)
+        {
+            IsPausedChanged?.Invoke(newValue);
+        }
+
+        public event System.Action<bool> IsPausedChanged;
+
         private int _currentDialogueIndex;
-        
+
         //OnEndDialogue event
         public event System.Action OnEndDialogue;
 
@@ -64,7 +88,7 @@ namespace Novel
             {
                 StartDialogue(CurrentDialogue);
             }
-            
+
             ClosePotionRequest();
         }
 
@@ -75,7 +99,9 @@ namespace Novel
                 Debug.Log("Dialogue is null");
                 return;
             }
+
             Debug.Log(dialogue.name);
+            IsDialogueRunning = true;
             _isPaused = false;
             CurrentDialogue = dialogue;
             _currentDialogueIndex = 0;
@@ -103,7 +129,6 @@ namespace Novel
 
         public void AdvanceDialogue()
         {
-            
             if (_isPaused)
             {
                 return;
@@ -116,7 +141,7 @@ namespace Novel
                 Debug.Log("No dialogue to advance");
                 return;
             }
-            
+
             if (_currentDialogueIndex >= CurrentDialogue.Lines.Count)
             {
                 EndDialogue();
@@ -164,17 +189,19 @@ namespace Novel
         {
             Debug.Log("Open potion request");
             _potionSlot.gameObject.SetActive(true);
-            
+
             _potionSlotButton.onClick.AddListener(() =>
             {
                 IItem item = _potionSlot.GetItem();
                 
+                if (item == null)
+                    return;
+
                 if (!(item is Potion potion))
                 {
                     Debug.Log("provided item is not a potion");
                 }
-                else 
-                if (potion.GetEffectId() != potionEffect.GetEffectId())
+                else if (potion.GetEffectId() != potionEffect.GetEffectId())
                 {
                     Debug.Log("provided potion is not the correct effect");
                 }
@@ -186,7 +213,6 @@ namespace Novel
                     _potionSlot.ClearItem();
                 }
             });
-            
         }
 
         private void ClosePotionRequest()
@@ -195,7 +221,7 @@ namespace Novel
             _potionSlot.gameObject.SetActive(false);
             _potionSlotButton.onClick.RemoveAllListeners();
         }
-        
+
         private void HidePotionRequest()
         {
             Debug.Log("Hide potion request");
@@ -206,9 +232,8 @@ namespace Novel
         {
             _isPaused = true;
             Debug.Log("PauseInteractions");
-            
         }
-        
+
         private void UnpauseInteractions()
         {
             _isPaused = false;
@@ -247,6 +272,7 @@ namespace Novel
             Debug.Log("end dialogue");
             OnEndDialogue?.Invoke();
             _currentDialogue = null;
+            IsDialogueRunning = false;
         }
 
         private void ClearText()
