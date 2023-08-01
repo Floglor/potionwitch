@@ -1645,6 +1645,8 @@ GameObject:
   m_Component:
   - component: {fileID: 326051534}
   - component: {fileID: 326051533}
+  - component: {fileID: 326051535}
+  - component: {fileID: 326051536}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -1684,6 +1686,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &326051535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326051532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae8e632d5994ff8bd6a9c9eb423eed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _customVariablesBool:
+  - VariableName: testvarbool
+    BoolVariable: 0
+  _customVariablesInt:
+  - VariableName: testvarint
+    IntVariable: 0
+--- !u!114 &326051536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326051532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ac68d853af435dbe9c19fcbc6743be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _directorVariablesContainer: {fileID: 326051535}
 --- !u!1001 &345351250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8040,6 +8073,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884036973}
   m_CullTransparentMesh: 1
+--- !u!1 &1916298287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916298289}
+  - component: {fileID: 1916298288}
+  m_Layer: 0
+  m_Name: DirectorTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1916298288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916298287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e0c20300fbf0045b4ca33d52d6e64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1916298289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916298287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928477900
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,7 +8360,7 @@ PrefabInstance:
     - target: {fileID: 114600693638766706, guid: 9ed2a051c32b4fe47a5e4fb95c20b03f,
         type: 3}
       propertyPath: _activateOnStartup
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114689057623555238, guid: 9ed2a051c32b4fe47a5e4fb95c20b03f,
         type: 3}
@@ -9142,9 +9219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlocked: 0
   NextPhaseTime: 0
-  PhaseDialogue: {fileID: 11400000, guid: 0fb689c424220f0419e1b61ef374bfa0, type: 2}
+  PhaseDialogue: {fileID: 11400000, guid: 851de163df3c831428e7cf4da715b20b, type: 2}
   BlockedPhases: []
-  LinkedQuest: {fileID: 0}
+  LinkedQuest: {fileID: 2038356513}
 --- !u!114 &2038356513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9157,9 +9234,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b755072c3613c4693b9917190fdf15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestName: 
-  QuestDescription: 
-  date: 0
+  Condition:
+    FirstVariableName: 
+    Operation: 0
+    SecondVariableName: 
+  QuestName: Test Quest
+  QuestDescription: This quest is made forr testing
+  ChangingVariables: 1
+  CompletionVariableName: testvarbool
+  IsChangingBool: 1
+  CompletionVariableBool: 1
+  CompletionVariableInt: 0
+  date: 1
   IsCompleted: 0
   IsStarted: 0
   Phases:

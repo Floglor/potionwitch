@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Misc;
+using QFSW.QC;
 using UnityEngine;
 
 public class TimeController : MonoBehaviour, ISubject
@@ -9,13 +10,19 @@ public class TimeController : MonoBehaviour, ISubject
     
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            date++;
-            Notify();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    SkipDay();
+        //}
     }
-    
+
+    [Command]
+    private void SkipDay()
+    {
+        date++;
+        Notify();
+    }
+
     public void Attach(IObserver observer)
     {
         _observers.Add(observer);

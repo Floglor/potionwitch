@@ -50,6 +50,8 @@ namespace Novel
         
         [ShowIf("@this.IsInterrupted == true && this.InterruptType == DialogueInterruptType.Dialogue")]
         public Dialogue InterruptionDialogue;
+
+        public bool isChangingVariable;
         
         private static IEnumerable GetAllCharacterSprites()
         {
