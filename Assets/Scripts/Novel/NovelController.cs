@@ -192,6 +192,8 @@ namespace Novel
             Debug.Log("Open potion request");
             _potionSlot.gameObject.SetActive(true);
 
+            IsDialogueRunning = false;
+
             _potionSlotButton.onClick.AddListener(() =>
             {
                 IItem item = _potionSlot.GetItem();
@@ -216,10 +218,10 @@ namespace Novel
                 }
             });
             
-            _potionSlotCancelButton.onClick.AddListener(() =>
-            {
-                PostponeDialogue();
-            });
+           //_potionSlotCancelButton.onClick.AddListener(() =>
+           //{
+           //    PostponeDialogue();
+           //});
         }
 
         private void PostponeDialogue()
