@@ -35,7 +35,7 @@ namespace Director
         {
             Debug.Log($"Adding dialogue {dialogue.name}");
             _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
-            
+
         }
 
         [Command("AdvanceDialogue")]

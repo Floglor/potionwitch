@@ -24,6 +24,8 @@ namespace Novel
         [SerializeField] private NovelHistory _novelHistory;
         [SerializeField] private InventorySlot _potionSlot;
         [SerializeField] private Button _potionSlotButton;
+        [SerializeField] private Button _potionSlotCancelButton;
+        
 
         public event System.Action OnPauseInteractions;
         public event System.Action OnResumeInteractions;
@@ -213,6 +215,16 @@ namespace Novel
                     _potionSlot.ClearItem();
                 }
             });
+            
+            _potionSlotCancelButton.onClick.AddListener(() =>
+            {
+                PostponeDialogue();
+            });
+        }
+
+        private void PostponeDialogue()
+        {
+            throw new NotImplementedException();
         }
 
         private void ClosePotionRequest()
@@ -269,10 +281,18 @@ namespace Novel
         {
             PauseInteractions();
             ClearText();
+            ClearSprites();
             Debug.Log("end dialogue");
             OnEndDialogue?.Invoke();
             _currentDialogue = null;
             IsDialogueRunning = false;
+        }
+
+        private void ClearSprites()
+        {
+            SetCharacterSprite(null, DialoguePosition.Center);
+            SetCharacterSprite(null, DialoguePosition.Left);
+            SetCharacterSprite(null, DialoguePosition.Right);
         }
 
         private void ClearText()

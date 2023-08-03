@@ -85,6 +85,12 @@ namespace Director
             StartPhase(quest.Phases[0]);
         }
 
+        private void CancelQuest(Quest quest)
+        {
+            quest.IsStarted = false;
+            quest.date++;
+        }
+
         private void StartPhase(QuestPhase questPhase)
         {
             if (questPhase.isBlocked)
