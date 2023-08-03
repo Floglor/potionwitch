@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Novel;
+using QFSW.QC;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -34,9 +35,10 @@ namespace Director
         {
             Debug.Log($"Adding dialogue {dialogue.name}");
             _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
-            
+
         }
 
+        [Command("AdvanceDialogue")]
         public void AdvanceQueue()
         {
             if (_dialogueQueue.Count == 0) return;
