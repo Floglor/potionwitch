@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Novel;
 using QFSW.QC;
 using Sirenix.OdinInspector;
@@ -6,23 +7,27 @@ using UnityEngine;
 
 namespace Director
 {
-    public class PhaseDialogue
-    {
-        public Dialogue Dialogue;
-        public QuestPhase Phase;
-
-        public PhaseDialogue(Dialogue dialogue, QuestPhase phase)
-        {
-            Dialogue = dialogue;
-            Phase = phase;
-        }
-    }
-
     public class DialogueQueueController : MonoBehaviour
     {
-        [ShowInInspector]
-        private Queue<PhaseDialogue> _dialogueQueue;
+        [ShowInInspector] private Queue<PhaseDialogue> _dialogueQueue;
         private NovelController _novelController;
+
+        public bool _hasDialogue;
+
+        public event Action<bool> HasDialogueInQueue;
+        
+        public bool HasDialogue
+        {
+            get => _hasDialogue;
+            set
+            {
+                _hasDialogue = value;
+                HasDialogueInQueue.Invoke(_hasDialogue);
+                
+            }
+        }
+        
+        
 
         public void Start()
         {
@@ -35,14 +40,19 @@ namespace Director
         {
             Debug.Log($"Adding dialogue {dialogue.name}");
             _dialogueQueue.Enqueue(new PhaseDialogue(dialogue, questPhase));
-
+            HasDialogue = true;
         }
 
         [Command("AdvanceDialogue")]
         public void AdvanceQueue()
         {
-            if (_dialogueQueue.Count == 0) return;
-            
+            Debug.Log(_dialogueQueue.Count);
+            if (_dialogueQueue.Count == 0)
+            {
+                HasDialogue = false;
+                return;
+            }
+
             _novelController.StartDialogue(_dialogueQueue.Peek().Dialogue);
         }
 
@@ -54,13 +64,13 @@ namespace Director
         private void EndDialogue()
         {
             PhaseDialogue phaseDialogue = _dialogueQueue.Peek();
-            
+
             if (phaseDialogue.Phase != null)
             {
                 phaseDialogue.Phase.IsCompleted = true;
                 FindObjectOfType<Director>().EndPhase(phaseDialogue.Phase, phaseDialogue.Phase.LinkedQuest);
             }
-            
+
             _dialogueQueue.Dequeue();
 
             if (_dialogueQueue.Count > 0)

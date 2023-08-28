@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Alchemy.Nodes;
 using Inventory;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Alchemy
