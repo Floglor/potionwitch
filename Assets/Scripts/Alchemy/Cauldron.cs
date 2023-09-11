@@ -16,13 +16,15 @@ namespace Alchemy
 
         private NodePlacer _nodePlacer;
 
-        private void Awake()
+        private void Start()
         {
             _nodePlacer = FindObjectOfType<NodePlacer>();
         }
 
         public void Brew()
         {
+            if (_nodePlacer.Stone == null) return;
+
             if (UsedSelector.CursorNode.GetEffect() == null)
             {
                 Debug.Log("Can't brew, node is empty");
@@ -57,10 +59,14 @@ namespace Alchemy
         }
 
 
-        public void AddIngredient(Ingredient ingredient)
+        public bool AddIngredient(Ingredient ingredient)
         {
-            UsedSelector.ApplyMoveSet(ingredient.MoveSet);
+            if (!UsedSelector.ApplyMoveSet(ingredient.MoveSet))
+                return false;
+
             UsedIngredients.Add(ingredient);
+
+            return true;
         }
 
         public void ResetCauldron()
@@ -70,32 +76,40 @@ namespace Alchemy
                 _inventory.SpawnItem(usedIngredient);
             }
 
+            if (_nodePlacer.Stone == null) return;
+
             UsedIngredients.Clear();
             UsedSelector.ReturnCursor();
-            _nodePlacer.DeleteTestNodes();
+            _nodePlacer.ClearNodesAndStone();
         }
 
         public void OnDrop(PointerEventData eventData)
         {
             Debug.Log("Cauldron OnDrop");
-            
+
             if (eventData.pointerDrag.GetComponent<InventoryItem>() == null) return;
-            
-            IItem item = eventData.
-                pointerDrag.
-                GetComponent<InventoryItem>()
+
+
+            IItem item = eventData.pointerDrag.GetComponent<InventoryItem>()
                 .TargetItem;
 
-            if (item is Ingredient ingredient)
-            {
-                Debug.Log("it is an ingredient");
-                AddIngredient(ingredient);
-                _inventory.DestroyItem(ingredient);
-            }
-            else if (item is Stone stone)
+            if (item is Stone stone)
             {
                 _nodePlacer.Stone = stone;
                 _nodePlacer.LoadFromStone();
+                return;
+            }
+
+            if (item is Ingredient ingredient && _nodePlacer.Stone != null)
+            {
+                Debug.Log("it is an ingredient");
+
+                if (AddIngredient(ingredient))
+                {
+                    _inventory.DestroyItem(ingredient);
+
+                    Destroy(ingredient);
+                }
             }
         }
     }

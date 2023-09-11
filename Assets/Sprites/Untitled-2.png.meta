@@ -274,10 +274,10 @@ TextureImporter:
       name: Untitled-2_9
       rect:
         serializedVersion: 2
-        x: 914
-        y: 594
-        width: 1040
-        height: 221
+        x: 921
+        y: 614
+        width: 1023
+        height: 184
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

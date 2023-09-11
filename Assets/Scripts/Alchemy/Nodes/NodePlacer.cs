@@ -68,7 +68,7 @@ namespace Alchemy.Nodes
         [Button]
         public void LoadFromStone()
         {
-            DeleteTestNodes();
+            ClearNodes();
             foreach (AlchemyNode alchemyNode in Stone.Nodes)
             {
                 GameObject node = Instantiate(alchemyNode.gameObject, transform);
@@ -118,7 +118,14 @@ namespace Alchemy.Nodes
         }
 
         [Button("Delete test nodes"), GUIColor(1, 0, 0)]
-        public void DeleteTestNodes()
+        public void ClearNodesAndStone()
+        {
+            transform.Clear();
+            _nodesHolder.Clear();
+            Stone = null;
+        }
+
+        public void ClearNodes()
         {
             transform.Clear();
             _nodesHolder.Clear();

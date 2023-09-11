@@ -18,5 +18,5 @@ MonoBehaviour:
   _price: 2
   Icon: {fileID: -1342080585, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
   Name: Blueberry Seed
-  GrowingSprite: {fileID: 506520166, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
-  RipeSprite: {fileID: 597864713, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
+  GrowingSprite: {fileID: -62416778, guid: 74de37c322fc7ff46a92a8bd371eb19d, type: 3}
+  RipeSprite: {fileID: 1984790554, guid: 74de37c322fc7ff46a92a8bd371eb19d, type: 3}

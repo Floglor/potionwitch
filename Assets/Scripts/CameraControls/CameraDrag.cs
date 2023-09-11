@@ -44,14 +44,12 @@ namespace CameraControls
         public void OnPointerDown(PointerEventData eventData)
         {
             _isDragging = true;
-            Debug.Log("TELOR DETECTED");
             _dragOrigin = Input.mousePosition;
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
             _isDragging = false;
-            Debug.Log("BECAMO DETECTED");
         }
     }
 }

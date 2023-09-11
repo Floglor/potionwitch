@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &862696194962751861
 MonoBehaviour:
@@ -56,12 +56,12 @@ MonoBehaviour:
   IsChangingBool: 0
   CompletionVariableBool: 1
   CompletionVariableInt: 0
-  date: 1
+  date: 2
   IsCompleted: 0
   IsStarted: 0
   Phases:
   - {fileID: 862696194962751860}
-  Reward: {fileID: 0}
+  Reward: {fileID: 11400000, guid: 9b76c41027176f74f84901122c65ff0c, type: 2}
 --- !u!114 &862696194962751860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,6 +76,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlocked: 0
   NextPhaseTime: 0
-  PhaseDialogue: {fileID: 11400000, guid: 851de163df3c831428e7cf4da715b20b, type: 2}
+  PhaseDialogue: {fileID: 11400000, guid: b299f58e0c871c94087ce5a5012725f6, type: 2}
   BlockedPhases: []
   LinkedQuest: {fileID: 862696194962751861}

@@ -187,7 +187,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled-2_0
+      name: LeoItch
       rect:
         serializedVersion: 2
         x: 339
@@ -292,7 +292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled-2_12
+      name: LeoCheerful
       rect:
         serializedVersion: 2
         x: 327
@@ -344,9 +344,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      LeoItch: -5392625257635239999
       Untitled-2_1: -4548455104902304520
-      Untitled-2_0: -5392625257635239999
-      Untitled-2_12: 5384691744978314214
+      LeoCheerful: 5384691744978314214
       Untitled-2_3: 33363725635070822
       Untitled-2_28: 8684217468466284803
       Untitled-2_5: 2647721087300645799

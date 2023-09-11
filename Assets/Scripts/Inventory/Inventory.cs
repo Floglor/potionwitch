@@ -15,37 +15,41 @@ namespace Inventory
         [SerializeField] private GameObject _itemPrefab;
         [SerializeField] private Transform _contentTransform;
         [SerializeField] private DropArea _dropArea;
-        
+
+        [SerializeField] private List<GardenSeed> _startingSeeds;
+
+
         public List<InventoryItem> _inventoryItemsUI = new List<InventoryItem>();
 
         public GardenPlot SelectedGardenPlot;
-        
+
 
         private void Start()
         {
             _dropArea._dropTarget = this;
+            foreach (GardenSeed startingSeed in _startingSeeds)
+            {
+                SpawnItem(startingSeed);
+            }
         }
 
         public void ItemOnClick(IItem item)
         {
-            if (StateController.Instance.areIngredientsSelectable)
-            {
-                if (item is Ingredient ingredient && _cauldron is not null) 
-                {
-                    _cauldron.AddIngredient(ingredient);
-                    DestroyItem(item); 
-                }
-            }
+          //  if (item is Ingredient ingredient && _cauldron is not null)
+          //  {
+          //      _cauldron.AddIngredient(ingredient);
+          //      DestroyItem(item);
+          //  }
 
             if (item is GardenSeed gardenSeed && SelectedGardenPlot is not null)
             {
-                if (SelectedGardenPlot.IsPlanted == true)
+                if (SelectedGardenPlot.IsPlanted)
                 {
                     return;
                 }
 
-                Debug.Log("Succesfully planted Seed on Garden Plot:");
-                Debug.Log(SelectedGardenPlot.name);
+                Debug.Log($"Successfully planted Seed on Garden Plot: {SelectedGardenPlot.name}");
+
                 gardenSeed.PlantSeed(SelectedGardenPlot);
                 DestroyItem(item);
             }
@@ -54,7 +58,7 @@ namespace Inventory
         public void SpawnItem(IItem item)
         {
             items.Add(item);
-            
+
             GameObject itemObject = Instantiate(_itemPrefab, _contentTransform);
             _inventoryItemsUI.Add(itemObject.GetComponent<InventoryItem>());
 
@@ -68,11 +72,11 @@ namespace Inventory
 
             itemButton.onClick.AddListener(() => ItemOnClick(item));
         }
-        
+
         public void AddItem(InventoryItem itemObject)
         {
             itemObject.transform.SetParent(_contentTransform);
-            
+
             InventoryItem inventoryItem = itemObject.GetComponent<InventoryItem>();
             _inventoryItemsUI.Add(inventoryItem);
             inventoryItem.isDraggable = true;
@@ -90,16 +94,18 @@ namespace Inventory
             {
                 SelectedGardenPlot.Deselect();
             }
+
             gardenPlot.Select();
             SelectedGardenPlot = gardenPlot;
         }
-        
+
         public void DeselectGardenPlot(GardenPlot gardenPlot)
         {
             if (SelectedGardenPlot != null)
             {
                 SelectedGardenPlot.Deselect();
             }
+
             SelectedGardenPlot = null;
         }
 
@@ -148,7 +154,7 @@ namespace Inventory
                 if (item.Equals(_inventoryItemsUI[i].TargetItem))
                 {
                     if (_inventoryItemsUI[i].TargetItem is null) return;
-                    
+
                     Destroy(_inventoryItemsUI[i].gameObject);
                     _inventoryItemsUI.Remove(_inventoryItemsUI[i]);
                     break;
@@ -159,7 +165,7 @@ namespace Inventory
         public void OnDrop(PointerEventData eventData)
         {
             Debug.Log("OnDrop");
-            
+
             GameObject droppedItem = eventData.pointerDrag;
 
             if (droppedItem == null)
@@ -169,12 +175,11 @@ namespace Inventory
 
             InventoryItem item = droppedItem.GetComponent<InventoryItem>();
 
-            if (item != null && !item.NotOwned) 
+            if (item != null && !item.NotOwned)
             {
                 AddItem(item);
                 item.IsHeld = true;
             }
-            
         }
 
         public void SnapBack(InventoryItem item)

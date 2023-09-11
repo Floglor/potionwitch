@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef32a4bf80842f1ad4cad922b912369, type: 3}
-  m_Name: Advent 1
+  m_Script: {fileID: 11500000, guid: 8790eada17c44b75b54919e3f7796ece, type: 3}
+  m_Name: LeoReward1
   m_EditorClassIdentifier: 
-  Lines: []
+  Amount: 250

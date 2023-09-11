@@ -42,6 +42,11 @@ namespace Map
             {
                 defaultScreen.SetActive(true);
             }
+
+            foreach (MapObject mapObject in _mapObjects)
+            {
+                mapObject.gameObject.SetActive(false);
+            }
         }
 
         private void CloseHouse()

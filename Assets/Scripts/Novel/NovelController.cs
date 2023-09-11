@@ -25,7 +25,9 @@ namespace Novel
         [SerializeField] private InventorySlot _potionSlot;
         [SerializeField] private Button _potionSlotButton;
         [SerializeField] private Button _potionSlotCancelButton;
-        
+
+        [SerializeField] private List<GameObject> _advanceDialogueButtons;
+
 
         public event System.Action OnPauseInteractions;
         public event System.Action OnResumeInteractions;
@@ -44,16 +46,17 @@ namespace Novel
         private bool _isDialogueRunning;
 
         private bool _isPaused;
+
         public bool IsDialogueRunning
         {
             get => _isDialogueRunning;
-            
+
             private set
             {
                 if (_isDialogueRunning != value)
                 {
                     _isDialogueRunning = value;
-                    OnIsPausedChanged(value); 
+                    OnIsPausedChanged(value);
                 }
             }
         }
@@ -96,14 +99,17 @@ namespace Novel
 
         public void StartDialogue(Dialogue dialogue)
         {
+            UnpauseInteractions();
+
             if (dialogue is null)
             {
                 Debug.Log("Dialogue is null");
                 return;
             }
 
-            Debug.Log(dialogue.name);
-            IsDialogueRunning = true;
+            if (novelText.gameObject.activeInHierarchy)
+                IsDialogueRunning = true;
+
             _isPaused = false;
             CurrentDialogue = dialogue;
             _currentDialogueIndex = 0;
@@ -125,8 +131,9 @@ namespace Novel
                 : "Witch");
 
 
-            SetCharacterSprite(CurrentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
-                CurrentDialogue.Lines[_currentDialogueIndex].Position);
+            if (CurrentDialogue.Lines[_currentDialogueIndex].TargetCharacter != null)
+                SetCharacterSprite(CurrentDialogue.Lines[_currentDialogueIndex].CharacterSprite,
+                    CurrentDialogue.Lines[_currentDialogueIndex].Position);
         }
 
         public void AdvanceDialogue()
@@ -174,15 +181,22 @@ namespace Novel
 
             if (currentLine.IsInterrupted)
             {
-                if (currentLine.InterruptType == DialogueInterruptType.Choice)
+                switch (currentLine.InterruptType)
                 {
-                    PauseInteractions();
-                    ExecuteChoice(currentLine.InterruptionChoices);
-                }
-                else
-                {
-                    PauseInteractions();
-                    OpenPotionRequest(currentLine.interruptionPotion);
+                    case DialogueInterruptType.Choice:
+                        PauseInteractions();
+                        ExecuteChoice(currentLine.InterruptionChoices);
+                        break;
+                    case DialogueInterruptType.Potion:
+                        PauseInteractions();
+                        OpenPotionRequest(currentLine.interruptionPotion);
+                        break;
+                    case DialogueInterruptType.Dialogue:
+                        EndDialogue();
+                        StartDialogue(currentLine.InterruptionDialogue);
+                        break;
+                    default:
+                        break;
                 }
             }
         }
@@ -197,7 +211,7 @@ namespace Novel
             _potionSlotButton.onClick.AddListener(() =>
             {
                 IItem item = _potionSlot.GetItem();
-                
+
                 if (item == null)
                     return;
 
@@ -217,11 +231,11 @@ namespace Novel
                     _potionSlot.ClearItem();
                 }
             });
-            
-           //_potionSlotCancelButton.onClick.AddListener(() =>
-           //{
-           //    PostponeDialogue();
-           //});
+
+            //_potionSlotCancelButton.onClick.AddListener(() =>
+            //{
+            //    PostponeDialogue();
+            //});
         }
 
         private void PostponeDialogue()
@@ -246,12 +260,20 @@ namespace Novel
         {
             _isPaused = true;
             Debug.Log("PauseInteractions");
+            foreach (GameObject advanceDialogueButton in _advanceDialogueButtons)
+            {
+                advanceDialogueButton.SetActive(false);
+            }
         }
 
         private void UnpauseInteractions()
         {
             _isPaused = false;
             Debug.Log("UnpauseInteractions");
+            foreach (GameObject advanceDialogueButton in _advanceDialogueButtons)
+            {
+                advanceDialogueButton.SetActive(true);
+            }
         }
 
         private void ExecuteChoice(List<Choice> currentLineInterruptionChoices)
@@ -266,6 +288,7 @@ namespace Novel
                     _novelHistory.SaveInHistory(choice.GetComponent<TextMeshProUGUI>().text, "Witch");
                     StartDialogue(currentLineInterruptionChoice.NextDialogue);
                     ClearChoices();
+                    UnpauseInteractions();
                 });
             }
         }

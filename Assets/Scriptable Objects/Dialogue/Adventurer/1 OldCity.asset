@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef32a4bf80842f1ad4cad922b912369, type: 3}
+  m_Name: 1 OldCity
+  m_EditorClassIdentifier: 
+  Lines:
+  - Text: Well, I honestly don't know.
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: -5392625257635239999, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: But I feel that I MEANT to explore them!
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Like, as if they were waiting for me this whole time
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Maybe I am a hero from the stories, you know!
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: ...
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Do you like windmills, Leo?
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Aah... not really, why?
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Heh
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Nevermind. So, what do you need?
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 1
+    InterruptType: 2
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 11400000, guid: 86eed956b5657e14e826449cd2f85a18,
+      type: 2}
+    isChangingVariable: 0

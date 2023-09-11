@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebea8f3248da483890ef1739f43e49c8, type: 3}
+  m_Name: Potion of Regeneration
+  m_EditorClassIdentifier: 
+  EffectName: Potion of Regeneration
+  EffectDescription: Will help the body heal all injuries by morning.
+  PotionSprite: {fileID: 8545568746483760750, guid: 2191ab4b836919446bea8990389d53c1,
+    type: 3}
+  BaseCost: 50
+  CircleGameSpeed: 150
+  CircleGameRotation: 50

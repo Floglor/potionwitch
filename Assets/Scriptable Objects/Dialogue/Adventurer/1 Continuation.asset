@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef32a4bf80842f1ad4cad922b912369, type: 3}
+  m_Name: 1 Continuation
+  m_EditorClassIdentifier: 
+  Lines:
+  - Text: I need a health potion.
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: There are no health potions!
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: 5384691744978314214, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: What? It can't be...
+    TargetCharacter: {fileID: 11400000, guid: 617947a6b71f22644b9f486e8e719da1, type: 2}
+    CharacterSprite: {fileID: -5392625257635239999, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: How do you even imagine that? A wounded body needs rest.
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: -5392625257635239999, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: 'Although, I don''t prescribe wine and swinging couch like some charlatans,
+      thare are regenerative concontions that you might want to use if you want to
+      get better fast. '
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: -5392625257635239999, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 0
+    InterruptType: 0
+    interruptionPotion: {fileID: 0}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0
+  - Text: Let me find one...
+    TargetCharacter: {fileID: 0}
+    CharacterSprite: {fileID: -5392625257635239999, guid: 9a7ef8ba5e929dd4f9c71f56bc1e0e96,
+      type: 3}
+    Position: 0
+    ChangeUsedSprite: 0
+    UsedSpritePosition: 0
+    RemoveCharacterSprite: 0
+    ChangeSpriteTo: {fileID: 0}
+    IsInterrupted: 1
+    InterruptType: 1
+    interruptionPotion: {fileID: 11400000, guid: ea12d27e300c4d940aecb416e1acc2b5,
+      type: 2}
+    InterruptionChoices: []
+    InterruptionDialogue: {fileID: 0}
+    isChangingVariable: 0

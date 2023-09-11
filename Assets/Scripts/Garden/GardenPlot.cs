@@ -49,13 +49,12 @@ namespace Garden
         {
             if (!IsBought)
             {
-                Debug.Log("Not bought yet!");
+                Debug.Log("Haven't bought yet!");
                 return;
             }
 
             if (!IsPlanted && !IsSelected)
             {
-                Debug.Log("Succesfully clicked on Garden Plot! Activate Inventory!");
                 GlobalAccess.Instance.Inventory.gameObject.SetActive(true);
                 GlobalAccess.Instance.Inventory.SelectGardenPlot(this);
                 IsSelected = true;

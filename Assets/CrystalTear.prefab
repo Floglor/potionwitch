@@ -111,7 +111,7 @@ Transform:
   - {fileID: 7680441180809865103}
   - {fileID: 6822866285199889802}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1013054547
 MonoBehaviour:
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &700335632485573814
 GameObject:
@@ -816,7 +816,7 @@ MonoBehaviour:
   X: 2
   Y: 2
   IsWall: 0
-  potionEffect: {fileID: 0}
+  potionEffect: {fileID: 11400000, guid: ea12d27e300c4d940aecb416e1acc2b5, type: 2}
 --- !u!1 &949282629758653403
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &1134734588471083940
 GameObject:
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &1550242682303495593
 GameObject:
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 4
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &1583546243465711551
 GameObject:
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &2081648400680534206
 GameObject:
@@ -2229,7 +2229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &2743241594671807496
 GameObject:
@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &2788378007709928889
 GameObject:
@@ -2431,7 +2431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &2860099698337256584
 GameObject:
@@ -2734,7 +2734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &2996287690236937128
 GameObject:
@@ -2835,7 +2835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3037854597562931833
 GameObject:
@@ -2936,7 +2936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -4
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3068080237932634265
 GameObject:
@@ -3340,7 +3340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3562524737202242634
 GameObject:
@@ -3542,7 +3542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3717542242587529592
 GameObject:
@@ -3643,7 +3643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3758325642834650636
 GameObject:
@@ -3744,7 +3744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &3955011298305426045
 GameObject:
@@ -4148,7 +4148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &4461783725907354022
 GameObject:
@@ -4249,7 +4249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &4554962021540709111
 GameObject:
@@ -4956,7 +4956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &5504873872095838973
 GameObject:
@@ -5057,7 +5057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -1
   Y: 0
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &5567077092982961542
 GameObject:
@@ -5259,7 +5259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &5906622557262884279
 GameObject:
@@ -5360,7 +5360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &5913478821191848639
 GameObject:
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &5936514982851986749
 GameObject:
@@ -5663,7 +5663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &6425551090570441230
 GameObject:
@@ -5865,7 +5865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 4
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &6491590995738031903
 GameObject:
@@ -5966,7 +5966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &6499862481063873891
 GameObject:
@@ -6067,7 +6067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &6652790368029776368
 GameObject:
@@ -6168,7 +6168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &6744312154571030344
 GameObject:
@@ -6471,7 +6471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -2
   Y: -1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &7174101902442619790
 GameObject:
@@ -6673,7 +6673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &7414523427127073769
 GameObject:
@@ -6774,7 +6774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: -3
   Y: -2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &7703156617342667410
 GameObject:
@@ -6875,7 +6875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: -1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &7899024057609189456
 GameObject:
@@ -7077,7 +7077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 3
   Y: 1
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &8042810339782416743
 GameObject:
@@ -7380,7 +7380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 4
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &8200860161553075278
 GameObject:
@@ -7582,7 +7582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 0
   Y: -3
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &8537466158184670656
 GameObject:
@@ -7784,7 +7784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 2
   Y: 4
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &8649966078834817369
 GameObject:
@@ -8289,7 +8289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 4
   Y: 2
-  IsWall: 0
+  IsWall: 1
   potionEffect: {fileID: 0}
 --- !u!1 &9101963509598150865
 GameObject:

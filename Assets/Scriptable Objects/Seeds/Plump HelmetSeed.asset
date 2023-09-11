@@ -16,7 +16,7 @@ MonoBehaviour:
   GrowthDays: 2
   _growthSpeed: 0
   _price: 2
-  Icon: {fileID: 0}
+  Icon: {fileID: -1342080585, guid: 03b408e2f81f56d42b8af54d2ac743c9, type: 3}
   Name: Plump Helmet Seed
-  GrowingSprite: {fileID: 0}
-  RipeSprite: {fileID: 0}
+  GrowingSprite: {fileID: -62416778, guid: 74de37c322fc7ff46a92a8bd371eb19d, type: 3}
+  RipeSprite: {fileID: 1984790554, guid: 74de37c322fc7ff46a92a8bd371eb19d, type: 3}

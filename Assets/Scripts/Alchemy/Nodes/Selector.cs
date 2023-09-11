@@ -12,8 +12,8 @@ namespace Alchemy.Nodes
         public NodesHolder nodesHolder;
 
         [SerializeField] private TextMeshProUGUI _nodeDebugText;
-         private NodePainter _nodePainter;
-        
+        private NodePainter _nodePainter;
+
 
         private IAlchemySelectorTester _tester;
         private AlchemyNode _previousNode;
@@ -58,14 +58,14 @@ namespace Alchemy.Nodes
         {
             CursorNode = nodesHolder.GetNode(_positionX, _positionY);
             ResetStartNode();
-           _nodePainter.PaintSelection(CursorNode);
+            _nodePainter.PaintSelection(CursorNode);
         }
 
         private void ResetStartNode()
         {
             _previousNode = CursorNode;
         }
-        
+
         private bool ValidateNode()
         {
             if (_previousNode != null)
@@ -85,7 +85,7 @@ namespace Alchemy.Nodes
             if (CursorNode.IsWall)
             {
                 ReturnToPreviousPosition();
-                
+
                 Debug.Log($"Wall reached on [{CursorNode.X}], [{CursorNode.Y}]");
                 return false;
             }
@@ -115,20 +115,24 @@ namespace Alchemy.Nodes
             _positionY = _previousNode.Y;
         }
 
-        public void ApplyMove(Move move)
+        public bool ApplyMove(Move move)
         {
             MoveCursor(move);
-            ValidateNode();
+            return ValidateNode();
         }
 
-        public void ApplyMoveSet(MoveSet moveSet)
+        public bool ApplyMoveSet(MoveSet moveSet)
         {
+            bool success = false;
             foreach (Move move in moveSet.Moves)
             {
-                ApplyMove(move);
+                if (success == false)
+                    success = ApplyMove(move);
+                else
+                    ApplyMove(move);
             }
 
-            ValidateNode();
+            return success;
         }
 
         public void ReturnCursor()

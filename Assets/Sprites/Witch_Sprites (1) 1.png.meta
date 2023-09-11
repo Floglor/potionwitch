@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Witch_Sprites (1) 1_0
+      name: Rectangle Vial
       rect:
         serializedVersion: 2
         x: 151
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_1"
+      name: Triangle Vial
       rect:
         serializedVersion: 2
         x: 401
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_2"
+      name: Round vial
       rect:
         serializedVersion: 2
         x: 651
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_7"
+      name: Diamond Vile
       rect:
         serializedVersion: 2
         x: 141
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_8"
+      name: Long Vial
       rect:
         serializedVersion: 2
         x: 446
@@ -469,18 +469,18 @@ TextureImporter:
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_9": -3331868340893793718
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_6": 4224271884669651651
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_3": 3311540011030624131
-      Witch_Sprites (1) 1_0: 278703585262289181
-      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_1": 373573475074387249
+      Round vial: 8636565539528899236
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_11": 5801184204006751
       Witch_Sprites (1) 1_3: -2010506355
       Witch_Sprites (1) 1_13: -8528541718570800163
+      Rectangle Vial: 278703585262289181
+      Diamond Vile: -7215003491757170432
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_14": -5774751912594757363
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_10": 4465556666720371842
+      Long Vial: 8545568746483760750
       "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_4": -5497091490054806730
-      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_7": -7215003491757170432
-      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_8": 8545568746483760750
       Witch_Sprites (1) 1_1: 1195379327
-      "Witch_\u0421\u043F\u0440\u0430\u0439\u0442\u044B (1) 1_2": 8636565539528899236
+      Triangle Vial: 373573475074387249
       Witch_Sprites (1) 1_2: 53245286
   spritePackingTag: 
   pSDRemoveMatte: 0

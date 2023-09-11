@@ -27,6 +27,11 @@ namespace Map
             return _roomName;
         }
 
+        public void disableRooms()
+        {
+            
+        }
+
         public List<GameObject> GetRooms()
         {
             return _rooms;
